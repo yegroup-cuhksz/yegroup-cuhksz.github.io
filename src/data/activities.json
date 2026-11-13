@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "kenny-ng-solar-atmospheric-neutrinos-2026",
+    "title": "Solar Atmospheric Neutrinos: Implications for Solar Physics and Dark Matter",
+    "category": "Seminar",
+    "summary": "Prof. Kenny Ng reviews cosmic-ray interactions in the solar atmosphere, the effect of solar magnetic fields on the neutrino flux, and the implications for dark matter searches from the Sun.",
+    "status": "published",
+    "date": "2026-11-12",
+    "time": "12:15–13:15",
+    "speaker": "Prof. Kenny Ng",
+    "affiliation": "The Chinese University of Hong Kong",
+    "host": "Prof. Jingqiang Ye",
+    "venue": "RX608",
+    "body": "The Sun is a high-energy neutrino source because cosmic rays interact with the solar atmosphere. These solar atmospheric neutrinos are realistically within reach of current and near-future experiments. However, evidence from solar atmospheric gamma rays shows that solar magnetic fields could significantly affect cosmic-ray interactions, and therefore the neutrino flux.\n\nThe seminar reviews current theoretical progress in understanding cosmic-ray interactions in the Sun under magnetic fields, together with the detection status and prospects for high-energy gamma rays and neutrinos. It closes with the implications of solar atmospheric neutrinos for dark matter searches from the Sun.",
+    "image": "/assets/images/activity_photo/20261112KennyNgSeminar/poster.jpg",
+    "image_alt": "Poster for Prof. Kenny Ng's seminar on solar atmospheric neutrinos.",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/20261112KennyNgSeminar/20261112_Kenny_Ng_Seminar.jpg",
+        "alt": "Group photograph after Prof. Kenny Ng's seminar.",
+        "caption": "Group photograph after the seminar."
+      }
+    ]
+  },
+  {
+    "slug": "nobel-prize-neutrinos-2026",
+    "title": "The 2026 Nobel Prize in Physics: The Past and Present of Neutrinos",
+    "category": "Undergraduate Lecture",
+    "summary": "A CUHKSZ Physical Society lecture on how neutrinos moved from a bold hypothesis to Nobel-winning discoveries, and how IceCube turns Antarctic ice into a neutrino telescope.",
+    "status": "published",
+    "date": "2026-11-07",
+    "time": "15:00–17:00",
+    "speaker": "Prof. Jingqiang Ye",
+    "affiliation": "The Chinese University of Hong Kong, Shenzhen",
+    "host": "CUHKSZ Physical Society",
+    "venue": "TxC 102",
+    "body": "Neutrinos pass through our bodies at every moment yet almost never leave a trace. Why have these “ghost particles” been central to five Nobel Prizes in Physics?\n\nTaking this year's Nobel Prize as its starting point, the lecture traces how neutrinos moved from a bold hypothesis to experimental discovery, and how clues from the Sun and supernovae changed our understanding of the microscopic world. It also visits IceCube at the South Pole, where a cubic kilometre of ice has become a giant telescope for high-energy neutrinos from the most violent accelerators in the universe.",
+    "image": "/assets/images/activity_photo/20261107UG_Talk/poster.jpeg",
+    "image_alt": "Poster for Prof. Jingqiang Ye's CUHKSZ Physical Society lecture on neutrinos and the Nobel Prize.",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/20261107UG_Talk/WechatIMG3902.jpg",
+        "alt": "Prof. Jingqiang Ye speaking at the CUHKSZ Physical Society lecture.",
+        "caption": "Prof. Jingqiang Ye speaking at the CUHKSZ Physical Society lecture."
+      },
+      {
+        "image": "/assets/images/activity_photo/20261107UG_Talk/WechatIMG3903.jpg",
+        "alt": "Students talking with Prof. Jingqiang Ye after the lecture.",
+        "caption": "Discussion after the lecture."
+      }
+    ]
+  }
+]

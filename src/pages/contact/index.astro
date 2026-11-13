@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { phoneDial, settings } from '../../lib/content';
+---
+
+<BaseLayout
+  title="Contact"
+  description={`Contact the Neutrino & Dark Matter Group at CUHK-Shenzhen: ${settings.address.join(', ')}. Email ${settings.email}.`}
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Contact</p>
+    <h1>Find us at CUHK-Shenzhen.</h1>
+    <p class="lead">
+      For research enquiries, collaboration or application questions, contact the group using the
+      details below.
+    </p>
+  </div>
+
+  <div class="container contact-layout">
+    <section class="contact-card" aria-labelledby="address-title">
+      <p class="eyebrow">Campus and office address</p>
+      <h2 id="address-title">{settings.name}</h2>
+      <address>
+        {settings.address.map((line) => <>{line}<br /></>)}
+      </address>
+      <a class="text-link" href={settings.universityUrl} rel="noopener noreferrer">
+        CUHK-Shenzhen official website <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+    <section class="contact-methods" aria-labelledby="contact-methods-title">
+      <h2 id="contact-methods-title" class="visually-hidden">Contact methods</h2>
+      <div>
+        <p class="eyebrow">Email</p>
+        <h2><a href={`mailto:${settings.email}`}>{settings.email}</a></h2>
+        <p>General group and application enquiries</p>
+      </div>
+      <div>
+        <p class="eyebrow">Telephone</p>
+        <h2><a href={`tel:${phoneDial}`}>{settings.phone}</a></h2>
+        <p>Institutional contact number</p>
+      </div>
+      <div>
+        <p class="eyebrow">Institution</p>
+        <h2>{settings.institution}</h2>
+        <p>{settings.school}</p>
+      </div>
+    </section>
+  </div>
+</BaseLayout>

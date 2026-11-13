@@ -1,0 +1,54 @@
+---
+import { settings } from '../lib/content';
+
+const pathname = Astro.url.pathname;
+const navItems = [
+  { label: 'Home', href: '/' },
+  { label: 'Research', href: '/research/' },
+  { label: 'Activities', href: '/activities/' },
+  { label: 'People', href: '/people/' },
+  { label: 'Openings', href: '/opening/' },
+  { label: 'Publications', href: '/publication/' },
+  { label: 'Gallery', href: '/gallery/' },
+  { label: 'Contact', href: '/contact/' },
+];
+
+function isCurrent(href: string): boolean {
+  if (href === '/') return pathname === '/';
+  return pathname === href || pathname.startsWith(href);
+}
+---
+
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="/" aria-label={`${settings.name} home`}>
+      <span class="brand-mark" aria-hidden="true">Ye</span>
+      <span class="brand-text">
+        Neutrino &amp; Dark Matter
+        <small>CUHK-Shenzhen</small>
+      </span>
+    </a>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-menu-toggle
+    >
+      <span class="menu-icon" aria-hidden="true">☰</span>
+      Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-site-nav data-open="false">
+      {
+        navItems.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isCurrent(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

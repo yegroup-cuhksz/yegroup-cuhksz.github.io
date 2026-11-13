@@ -1,0 +1,110 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocalImage from '../../components/LocalImage.astro';
+import {
+  albumBySlug,
+  albums,
+  assertNewsReferences,
+  formatNewsDate,
+  news,
+  publicationById,
+  publications,
+  publishedNews,
+} from '../../lib/content';
+
+export async function getStaticPaths() {
+  const members = await getCollection('members');
+  assertNewsReferences(news, {
+    memberSlugs: members.map((member) => member.data.slug),
+    publicationIds: publications.map((item) => item.id),
+    albumSlugs: albums.map((album) => album.slug),
+  });
+  return publishedNews.map((item) => ({
+    params: { slug: item.slug },
+    props: {
+      item,
+      members: members.map((member) => ({ slug: member.data.slug, name: member.data.name })),
+    },
+  }));
+}
+
+const { item, members } = Astro.props;
+const memberNames = new Map(members.map((member: { slug: string; name: string }) => [member.slug, member.name]));
+const paragraphs = item.body?.split(/\n{2,}/).map((paragraph) => paragraph.trim()).filter(Boolean) ?? [];
+const relatedPublications = (item.related_publications ?? [])
+  .map((id) => publicationById.get(id))
+  .filter((publication) => publication !== undefined);
+const relatedAlbums = (item.related_albums ?? [])
+  .map((slug) => albumBySlug.get(slug))
+  .filter((album) => album !== undefined);
+const relatedMembers = (item.related_members ?? [])
+  .map((slug) => ({ slug, name: memberNames.get(slug) ?? slug }))
+  .filter((member) => member.name);
+---
+
+<BaseLayout title={item.title} description={item.summary} image={item.image}>
+  <div class="container breadcrumb">
+    <a href="/news/">News</a> / {formatNewsDate(item)}
+  </div>
+
+  <article class="container news-article">
+    <header class="news-article-header">
+      <p class="eyebrow">{item.category}</p>
+      {item.editorial_preview && (
+        <p class="news-preview-note">
+          <strong>Editorial preview.</strong>{' '}
+          {item.preview_note ?? 'Not an approved group announcement.'}
+        </p>
+      )}
+      <h1>{item.title}</h1>
+      <div class="news-article-meta">
+        <time datetime={item.date}>Announced {formatNewsDate(item)}</time>
+        {item.event_date && item.event_date !== item.date && (
+          <span>Event date: {formatNewsDate({ ...item, date: item.event_date })}</span>
+        )}
+      </div>
+      <p class="news-article-summary">{item.summary}</p>
+    </header>
+
+    {item.image && (
+      <figure class="news-article-image">
+        <LocalImage
+          src={item.image}
+          alt={item.image_alt ?? item.title}
+          sizes="(max-width: 800px) 100vw, 800px"
+        />
+      </figure>
+    )}
+
+    {
+      paragraphs.length > 0 && (
+        <div class="prose news-article-body">
+          {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      )
+    }
+
+    {
+      (relatedPublications.length > 0 || relatedAlbums.length > 0 || relatedMembers.length > 0 || item.source_url) && (
+        <aside class="news-related">
+          <h2>Related</h2>
+          <ul>
+            {relatedPublications.map((publication) => (
+              <li><a href={publication.url} rel="noopener noreferrer">{publication.title}</a></li>
+            ))}
+            {relatedAlbums.map((album) => (
+              <li><a href={`/gallery/${album.slug}/`}>{album.title}</a></li>
+            ))}
+            {relatedMembers.map((member) => (
+              <li><a href={`/${member.slug}/`}>{member.name}</a></li>
+            ))}
+            {item.source_url && (
+              <li><a href={item.source_url} rel="noopener noreferrer">{item.source_label ?? 'Source'}</a></li>
+            )}
+          </ul>
+        </aside>
+      )
+    }
+  </article>
+</BaseLayout>

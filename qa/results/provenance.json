@@ -1,0 +1,162 @@
+{
+  "date": "2026-11-12",
+  "scope": "local implementation acceptance, full browser/release acceptance incomplete",
+  "runs": [
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "codex_version": "codex-cli 0.162.0-alpha.17.2",
+      "status": "ready_for_gpt_review",
+      "real_api_call_attempted": true,
+      "cli_exit_code": 0,
+      "process_status": "exited",
+      "turn_completed": true,
+      "source_unchanged": true,
+      "patch_sha256": "9ae720bfa2cdeeaba4db068a9c2f3e790a39a96da6ac7033d3919eecd208a229",
+      "event_errors": [],
+      "run_id": "20261112-164409-77e85702"
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "codex_version": "codex-cli 0.162.0-alpha.17.2",
+      "status": "failed",
+      "real_api_call_attempted": true,
+      "cli_exit_code": 0,
+      "process_status": "exited",
+      "turn_completed": true,
+      "source_unchanged": true,
+      "patch_sha256": "6a469c66e8d20e81dd5f4dfbef05b9f38a0a39094f4653615136d7f17bda69c9",
+      "event_errors": [
+        "error",
+        "error",
+        "error",
+        "error"
+      ],
+      "run_id": "20261112-170632-2f35e203"
+    }
+  ],
+  "revision_recovery": {
+    "decision": "manual_supervisor_recovery",
+    "reason": "Runner conservatively marks any error event as failed. All four events were recoverable network reconnect notices; CLI subsequently exited zero and emitted turn.completed. Original runner result was preserved.",
+    "transport_notices": [
+      "Reconnecting... 1/1 (stream disconnected before completion: Transport error: network error: error decoding response body)",
+      "Reconnecting... waiting for network (Connection failed: error sending request)",
+      "Reconnecting... waiting for network (Connection failed: error sending request)",
+      "Reconnecting... 1/1 (stream disconnected before completion: Transport error: network error: error decoding response body)"
+    ],
+    "source_unchanged": true,
+    "patch_digest_verified": true,
+    "exact_allowlist_verified": true,
+    "independent_source_review": "complete",
+    "patch_sha256": "6a469c66e8d20e81dd5f4dfbef05b9f38a0a39094f4653615136d7f17bda69c9"
+  },
+  "supervisor_changes": [
+    "Regenerated portable package-lock.json and independently verified clean installation",
+    "Clarified deployment state and validation wording in documentation",
+    "Added independent QA harnesses, results and acceptance report; linked report from plan.md",
+    "Documented filename changes for replacing cached media/CV files"
+  ],
+  "application_files_sha256": {
+    "package.json": "80624696e8288601ef143b688b08cfdf1f0f7c7dd0da7af64d4b612ea0cfd61d",
+    "astro.config.mjs": "094f53e806f8f385e37f5a07ef4d029f0c1db825bcad25a333c4d2fc1ad2fd3c",
+    "tsconfig.json": "a3a17339bb722d53059ca7b7b72df64aeb82a8cbeb14d75f5c265259da496a09",
+    "src/content.config.ts": "b4b5fd30e29090f76f39611eafda15eb9ebc5f74f1311e6cee4ccf0e23255268",
+    "src/layouts/BaseLayout.astro": "d28ba994db32267dece3f2e85c865850f782487eaa25a1d62741d2dfc755569a",
+    "src/components/Header.astro": "07694e9688c22f4edcf68fbbabf3e3e6f5b2744f6ac84ebd54d8f1341a20eaab",
+    "src/components/Footer.astro": "e2ad8541b3c3f66471185c80f76d8df7235fa231814fb346b299e22ccf396149",
+    "src/components/SectionHeading.astro": "644d9e555d286f2700f4ebd970c59514a68ba4a6f870399fd6e8e4251f475ab0",
+    "src/components/MemberCard.astro": "63d7baff320d44e19bfce7670f70cd7714f7a3a96be2e38c65730c7d451235ed",
+    "src/components/PublicationList.astro": "cef6eb8ff0e57a7f1838edce704bc9811847d39ed566f41cdf842321f2ec7b3f",
+    "src/components/NewsList.astro": "1571b62d58277c9d3350c56847a073485a24c259a7139e00249d1c354cc8abee",
+    "src/components/GalleryPreview.astro": "54a716109fa7ca271ec18a7712e16edb6b885ccfa936329d14b1fea0f8b85421",
+    "src/components/LocalImage.astro": "6f2d87bc1341c702cad3b3007b1148a1c33c580ca167a1fb3f8ad10266c16fc0",
+    "src/lib/content.ts": "46fe68731965c009904181cdeba04fa183e22d483c05e6976a722128f7bdaa21",
+    "src/styles/global.css": "60d3c31c1dea01f2836536695b936510a37231ae322c0bfd92eaeb4c4c1b50ac",
+    "src/scripts/site.ts": "7f8ffdc6eae0a024217ae562e1ed300dc888020eb733b9e93def10c55821f038",
+    "src/pages/index.astro": "e74911b19abf93143c69ffb2d502c8875f729e2143c77c5a7bef13153aa9e0b5",
+    "src/pages/research/index.astro": "e7551e739042db97b55c2e55d9abf93202105b89859ae77fb6d79da63a05fe72",
+    "src/pages/people/index.astro": "2a3aabcca2097e60ba0082f5b0df0a76b59e1eca55ec27b808e30c8f8b0372cc",
+    "src/pages/alumni/index.astro": "8c6537fd36ed11b66fd2508139cffecab6904622edfa9f5985230bfcd8a6545d",
+    "src/pages/[member].astro": "7e02b9f52b177455c8337cc0de03202aee2c03fd26eb6572594f1455d659b54a",
+    "src/pages/publication/index.astro": "f7be03e2db2dffc44d8614cf027e7743e190032bb0e2ac74916fd56ccd46c6e7",
+    "src/pages/opening/index.astro": "827a2d3cad0ec6f03362da1500c2b1d093340bb265be91c3a94a529e1789fa0a",
+    "src/pages/contact/index.astro": "b654bfb3d062a91819c4265a6510885c7aabb05ab8104454040e52f9ab0268fe",
+    "src/pages/gallery/index.astro": "643f4fefd75c1193b4e9f1ee838f31aa263b0f0c8f212581b7155732aed7fd48",
+    "src/pages/gallery/[slug].astro": "5798a8c67b932a10d17eddd80e1690a8d64e0525b47bd96aa8d171169233f839",
+    "src/pages/news/index.astro": "89b2db52f4b31b6e5f72221046af5eddc86f7dbc18642ffc6defecdb8fb5a873",
+    "src/pages/news/[slug].astro": "b7ac7390a5ba4b3861e46fd31a8df8342bbf1cc2e6c39ace730279de0ab26631",
+    "src/pages/404.astro": "66caedcae670244bc985cdd61bfd87cd540e990e56e7a3095100af25a5d2cbbc",
+    "src/pages/sitemap.xml.ts": "99629d209cd26f198b38f07420801d6a96060d98d365c17610b6109eae5678ec",
+    "src/pages/robots.txt.ts": "4ec5ba70d32a2e5e7602d157f9c9e4a0d89c9e9501e2a0d7b8dd7b5cdd8a2b8a",
+    "src/data/settings.json": "4da0caef942a3ccd3a6e6444a4375ef8dba7a0b110ea40b4a3576bd29a27f20b",
+    "src/data/publications.json": "8a6b8cc0366906c85589515ce908f808ef0d5b03c6cdfd641300e58297b18514",
+    "src/data/alumni.json": "26af2e2859538fbb2b12ef81247e710691ad9d355a54ac70b7ee51c0eae063ee",
+    "src/data/albums.json": "79627172e1c93398526f978db0a2bbd8001a32fd95d1b62f8f8c753471907883",
+    "src/data/news.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "scripts/generate-media.mjs": "9bdd7e78f53765dfe2f5c0df59e0ac8f7e07da2a068cdb4c7b3f9f624d31543d",
+    "scripts/validate-content.mjs": "687564d659b7cb67cf20f18beb0502d788b7ee59ee88e22d353b7a5433cb40ae",
+    "docs/CONTENT_GUIDE.md": "2a2fc2eb955d5191884060fddb097e4192004e184eb24ed0cfa060d4d421c303",
+    "docs/DEPLOYMENT.md": "c524519244db04a69d7744c8db3b8220b501d51a255593237f32259353af5d21",
+    "docs/URL_MAP.md": "90e3f6997ca7968f989ad0f330180cdecdf8864fd5313e47ce18f50d18585e70",
+    "docs/IMPLEMENTATION_NOTES.md": "fb9d0945192177a53ca00f8991bda3c68fabe47c208d6548b12cbb11291a8090",
+    "README.md": "c53de50062c120047c932e66cc1116ec186cb67780f11a2df551887bf74ae451",
+    "src/content/members/jingqiang-ye.md": "dbc6dd3655fbb6c90e166f4b187c5f72fa66881d4c9380ba53c417d3774b5d14",
+    "src/content/members/jiafu-li.md": "99dea1b240a5c1eaf107246cac9658fe305813318bac5c2adfd8c25cb2ca916a",
+    "src/content/members/huayu-dai.md": "e85790e1f333703004f585158526d030684dbc352a2342e71739f3fe9deb8fca",
+    "src/content/members/hongkun-li.md": "7dc902ce0989c0e739cfd4fcc65822d464070c44728a720ac1a81d9544464b47",
+    "src/content/members/haoyun-liu.md": "f8715e8cecc6ff5c08f5f8a86f63679574c83eb7b4dfdfd171a6bdea47bf7889",
+    "src/content/members/yuanyuan-ren.md": "a5a0cd1efb4cba7f4d1a9a5914aed7743135423fd2ccac5dc6e71721902020c6",
+    "src/content/members/tianyuan-zha.md": "c265c5d0a10c5237cfbdf07badeb49cef3464f2352258b5a67ccf533a8abe7b6",
+    "src/content/members/zixi-chen.md": "4223ed1124985b6280553d7e8063718fb2a14e2f452db2fe2ad0091763e2f38c",
+    "src/content/members/xiaoling-cheng.md": "d506e6b75e720b3ad0d1a4e9d90adf2110bf5c911b6338ba177f1274fc5511b7",
+    "src/content/research/xenonnt.md": "51dfac6eee144ee362e05b846ceff91f8d5564b9c54f69c7bb429441b7b235ec",
+    "src/content/research/relics.md": "515aaf5317c879bf9f8afd83e0c35fb4d5d85bcbda91605bfb0be5639d144a71",
+    "src/content/openings/positions.md": "2ab0283caef851308c8f2117fd8fa748e569af1a1860ee9ecae870593899e6c7",
+    "package-lock.json": "b9895ff9bdf9526da3bf66bbe3ffdd35fa92dee4a46a0d552a986f08b3adb4c3",
+    ".nvmrc": "4137094e7792cb49fe1afddc3f87208f0ef4adfef7d3acd1def0198786d393c2",
+    ".gitignore": "e66f01ca7d328166d07400994969751b621c8c8baa4c5e5a9d1ab1c379176a61"
+  },
+  "combined_patch_sha256": "b023135f33e2b7763c36f648212b3cc61c30217dd5362bd67c38e4419f1c6ebe",
+  "public_original_assets": {
+    "logo_standard.png": "0b4b849ba0cf3fb743f679df1ac25ab1b801359fa126412a9b8fabb113a2a627",
+    "yejingqiang1.jpg": "0d55d029eb9086c14fa7c7c68980e179f26a07e124337e347aa202c43f60a495",
+    "xiaolingcheng-2.jpg": "5f5738b1438d782318960f5a9b58a08b4d3595eb00329ca7a80f1c02f1df5be9",
+    "e181_1.png": "68cbb0a6af043c841b24ffb28d74464a553f25175095204ac5f0aea794c9c253",
+    "relics_logo.jpg": "8ee6074741566f0d8c071a2a4102e87f7b7b15aaa9829014ddc961b8e1844a36",
+    "groupphoto_20240711.jpg": "226dcd56e327c57cd3f5af1e078fee05b45cf0333be30e72668eaff85216cc73",
+    "tempimagetm8w31.jpg": "c18fbc5cf35be41f58dbe5e382e033d1d321a18e02a6596208eda3c9174c1276",
+    "tempimageu02rr4.jpg": "13d170c048a80fd0cd5d59784e467c38457e488aed9cc97ca540a7f97ab5c8ca",
+    "zixichen-e1747299946193.jpg": "d3e65ead853bf0a486802a1aea48d8efa4016cee37ecb03e384e446ab235074e",
+    "tianyuanzha.jpg": "250e94079aaf3a65a8155949cf7a371c30317a17644f96aab0f95bb2edc724f8",
+    "jingqiang2-689642022-e1732801026118.jpg": "ed5f49a24e6b337c17d9e806231172e43ce5a84a7f2b87879e75c10c89ec3594",
+    "groupphoto_20250110-1.jpg": "815839223183c82356b22cda387bf7e9da5afa824740270a926532c745d21890",
+    "jiafuli.png": "cbdd4d1a8d9aa7b285749aa9d45bddc6e0d6e0fa4869eb229e885523c84a9a15",
+    "haoyun.jpeg": "806b1bac6e7de9412fc97883bed05d1b4b7bb116b3d62477347486bbcbd989e0",
+    "renyuanyuan-346225708-e1732800139141.jpeg": "7ab6a2d4ec015a5a4ebd05f3febe6b7d8f587437423a0d1a537ac2fdc31fc3fb",
+    "xiaolingcheng1.jpg": "6706ac4a83964df6369de9dad1dd1fd74094772705559da42d324d99e0cfd5e4",
+    "cv.pdf": "40c07cf194d22a2ccdbd8874197f3bc9297b436bbf8a8aaba79bcd5d4b7ad492"
+  },
+  "no_production_deployment": true,
+  "final_automated_results": {
+    "static": {
+      "pages": 21,
+      "checks": 830,
+      "status": "PASS"
+    },
+    "client_harness": {
+      "checks": 12,
+      "status": "PASS"
+    },
+    "content_fixtures": {
+      "cases": 20,
+      "status": "PASS"
+    },
+    "static_http": {
+      "checks": 110,
+      "status": "PASS"
+    },
+    "clean_npm_ci": "PASS",
+    "build": "PASS"
+  }
+}

@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "xenonnt-solar-pp-preview",
+    "title": "XENONnT measures low-energy solar pp neutrinos through electron scattering",
+    "date": "2026-08-31",
+    "category": "Research",
+    "summary": "XENONnT has measured a low-energy solar-neutrino signal dominated by pp neutrinos, observed through elastic scattering on electrons. The result uses data from the first two science runs of the detector.",
+    "status": "published",
+    "editorial_preview": true,
+    "preview_note": "Not an approved group announcement.",
+    "body": "The XENON Collaboration reports a first measurement of solar neutrinos via elastic neutrino–electron scattering at keV energies, using the first two XENONnT science runs. The signal is dominated by pp neutrinos, which originate in the proton–proton fusion chain that powers the Sun.\n\nWith 2.46 tonne-years of exposure, the analysis covers electron recoil energies from 1 to 140 keV and is sensitive to incident solar neutrino energies down to 17 keV. The low-energy solar-neutrino signal rejects the background-only hypothesis at 5.0 sigma; this is the significance of the observed solar signal, not an independent pp-only discovery significance.\n\nEditorial preview: this entry is a layout and copy sample, not an approved group announcement. Its date follows the collaboration's 31 August 2026 release.",
+    "source_url": "https://arxiv.org/abs/2608.29450",
+    "source_label": "Read the paper — arXiv:2608.29450"
+  }
+]

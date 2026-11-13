@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import LocalImage from './LocalImage.astro';
+
+interface Props {
+  member: CollectionEntry<'members'>;
+}
+
+const { member } = Astro.props;
+const { data } = member;
+const initial = data.name.charAt(0);
+---
+
+<article class="member-card">
+  <a class="member-photo" href={`/${data.slug}/`} aria-label={`Profile of ${data.name}`}>
+    {data.portrait ? (
+      <LocalImage
+        src={data.portrait}
+        alt={data.portrait_alt ?? `Portrait of ${data.name}`}
+        sizes="(max-width: 600px) 45vw, (max-width: 900px) 30vw, 280px"
+      />
+    ) : (
+      <span class="member-photo-fallback" aria-hidden="true">{initial}</span>
+    )}
+    <span class="photo-arrow" aria-hidden="true">→</span>
+  </a>
+  <p class="member-role">{data.role}</p>
+  <h3><a href={`/${data.slug}/`}>{data.name}</a>{data.chinese ? <span class="chinese-name">{data.chinese}</span> : null}</h3>
+  <div class="member-details">
+    {data.email ? <a class="member-email" href={`mailto:${data.email}`}>{data.email}</a> : null}
+    {data.office ? <p class="member-office">Office: {data.office}</p> : null}
+    {data.cv ? <a class="member-cv" href={data.cv}>Curriculum vitae (PDF)</a> : null}
+  </div>
+</article>

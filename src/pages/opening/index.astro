@@ -1,0 +1,82 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatIsoDate } from '../../lib/content';
+
+const entries = await getCollection('openings');
+const opening = entries[0];
+if (!opening) throw new Error('The openings collection must contain positions.md.');
+const { Content } = await render(opening);
+const reviewedDate = opening.data.last_reviewed;
+
+const statusLabels: Record<string, string> = {
+  open: 'Open',
+  closed: 'Closed',
+  general_inquiry: 'General inquiry',
+};
+---
+
+<BaseLayout
+  title="Openings"
+  description="PhD and postdoctoral application information for the Neutrino & Dark Matter Group at CUHK-Shenzhen, including required materials and contact instructions."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Openings</p>
+    <h1>Work with us.</h1>
+    <p class="lead">{opening.data.intro}</p>
+  </div>
+
+  <div class="container opening-layout">
+    <aside class="opening-aside">
+      <p class="eyebrow">Recruitment status</p>
+      <p class="review-note">
+        Last reviewed {formatIsoDate(reviewedDate)}. {opening.data.review_note}
+      </p>
+      <div class="opening-contact">
+        <p class="eyebrow">Contact</p>
+        <p>{opening.data.contact.name}</p>
+        <a href={`mailto:${opening.data.contact.email}`}>{opening.data.contact.email}</a>
+      </div>
+    </aside>
+
+    <div class="opening-prose">
+      {
+        opening.data.roles.map((role) => (
+          <section class="opening-role" id={`role-${role.id}`} aria-labelledby={`role-${role.id}-title`}>
+            <div class="opening-role-heading">
+              <h2 id={`role-${role.id}-title`}>{role.title}</h2>
+              <span class:list={['status', `status-${role.status}`]}>{statusLabels[role.status]}</span>
+            </div>
+            <p>{role.instructions}</p>
+            {role.materials && role.materials.length > 0 && (
+              <>
+                <h3>Application materials</h3>
+                <ul>
+                  {role.materials.map((material) => <li>{material}</li>)}
+                </ul>
+                {role.formal_application_note && role.formal_materials && (
+                  <>
+                    <p>{role.formal_application_note}</p>
+                    <ul>
+                      {role.formal_materials.map((material) => <li>{material}</li>)}
+                    </ul>
+                  </>
+                )}
+              </>
+            )}
+            {role.external_url && (
+              <p>
+                <a class="text-link" href={role.external_url} rel="noopener noreferrer">
+                  University programme information <span aria-hidden="true">↗</span>
+                </a>
+              </p>
+            )}
+          </section>
+        ))
+      }
+      <div class="prose opening-footer">
+        <Content />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

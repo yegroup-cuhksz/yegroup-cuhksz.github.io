@@ -1,0 +1,186 @@
+[
+  {
+    "name": "empty-activities-visible-and-homepage-order",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "] Syncing content\n18:57:58 [content] Synced content\n18:57:58 [types] Generated 375ms\n18:57:58 [build] output: \"static\"\n18:57:58 [build] mode: \"static\"\n18:57:58 [build] directory: /private/var/folders/q0/m6kgbn3946x6kr5_s7rgnzl40000gn/T/group-activities-qa-5997oopy/dist/\n18:57:58 [build] Collecting build info...\n18:57:58 [build] ✓ Completed in 394ms.\n18:57:58 [build] Building static entrypoints...\n18:57:59 [vite] ✓ built in 699ms\n18:57:59 [vite] ✓ built in 54ms\n18:57:59 [build] Rearranging server assets...\n\n generating static routes \n18:57:59   ├─ /404.html (+6ms) \n18:57:59   ├─ /activities/index.html (+2ms) \n18:57:59   ├─ /alumni/index.html (+1ms) \n18:57:59   ├─ /contact/index.html (+1ms) \n18:57:59   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:57:59   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:57:59   ├─ /gallery/index.html (+1ms) \n18:57:59   ├─ /news/xenonnt-solar-pp-preview/index.html (+2ms) \n18:57:59   ├─ /news/index.html (+4ms) \n18:57:59   ├─ /opening/index.html (+2ms) \n18:57:59   ├─ /people/index.html (+2ms) \n18:57:59   ├─ /publication/index.html (+1ms) \n18:57:59   ├─ /research/index.html (+1ms) \n18:57:59   ├─ /robots.txt (+1ms) \n18:57:59   ├─ /sitemap.xml (+1ms) \n18:57:59   ├─ /haoyun-liu/index.html (+1ms) \n18:57:59   ├─ /hongkun-li/index.html (+1ms) \n18:57:59   ├─ /huayu-dai/index.html (+1ms) \n18:57:59   ├─ /jiafu-li/index.html (+0ms) \n18:57:59   ├─ /jingqiang-ye/index.html (+1ms) \n18:57:59   ├─ /tianyuan-zha/index.html (+1ms) \n18:57:59   ├─ /xiaoling-cheng/index.html (+0ms) \n18:57:59   ├─ /yuanyuan-ren/index.html (+0ms) \n18:57:59   ├─ /zixi-chen/index.html (+0ms) \n18:57:59   ├─ /index.html (+2ms) \n18:57:59 ✓ Completed in 49ms.\n\n18:57:59 [build] ✓ Completed in 832ms.\n18:57:59 [build] 23 page(s) built in 1.23s\n18:57:59 [build] Complete!\n"
+  },
+  {
+    "name": "content-only-additions-sort-limit-drafts-metadata-and-escaping",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "oopy/dist/\n18:58:05 [build] Collecting build info...\n18:58:05 [build] ✓ Completed in 247ms.\n18:58:05 [build] Building static entrypoints...\n18:58:06 [vite] ✓ built in 589ms\n18:58:06 [vite] ✓ built in 31ms\n18:58:06 [build] Rearranging server assets...\n\n generating static routes \n18:58:06   ├─ /404.html (+6ms) \n18:58:06   ├─ /activities/qa-latest-seminar/index.html (+2ms) \n18:58:06   ├─ /activities/qa-undergraduate-lecture/index.html (+1ms) \n18:58:06   ├─ /activities/qa-external-talk/index.html (+1ms) \n18:58:06   ├─ /activities/qa-undated-activity/index.html (+1ms) \n18:58:06   ├─ /activities/index.html (+2ms) \n18:58:06   ├─ /alumni/index.html (+1ms) \n18:58:06   ├─ /contact/index.html (+1ms) \n18:58:06   ├─ /gallery/group-photo-2025-01-10/index.html (+3ms) \n18:58:06   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:58:06   ├─ /gallery/index.html (+1ms) \n18:58:06   ├─ /news/xenonnt-solar-pp-preview/index.html (+1ms) \n18:58:06   ├─ /news/index.html (+1ms) \n18:58:06   ├─ /opening/index.html (+1ms) \n18:58:06   ├─ /people/index.html (+2ms) \n18:58:06   ├─ /publication/index.html (+2ms) \n18:58:06   ├─ /research/index.html (+1ms) \n18:58:06   ├─ /robots.txt (+0ms) \n18:58:06   ├─ /sitemap.xml (+1ms) \n18:58:06   ├─ /haoyun-liu/index.html (+1ms) \n18:58:06   ├─ /hongkun-li/index.html (+1ms) \n18:58:06   ├─ /huayu-dai/index.html (+1ms) \n18:58:06   ├─ /jiafu-li/index.html (+1ms) \n18:58:06   ├─ /jingqiang-ye/index.html (+0ms) \n18:58:06   ├─ /tianyuan-zha/index.html (+1ms) \n18:58:06   ├─ /xiaoling-cheng/index.html (+0ms) \n18:58:06   ├─ /yuanyuan-ren/index.html (+0ms) \n18:58:06   ├─ /zixi-chen/index.html (+0ms) \n18:58:06   ├─ /index.html (+3ms) \n18:58:06 ✓ Completed in 48ms.\n\n18:58:06 [build] ✓ Completed in 697ms.\n18:58:06 [build] 27 page(s) built in 953ms\n18:58:06 [build] Complete!\n"
+  },
+  {
+    "name": "configurable-activity-preview-limit",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "oopy/dist/\n18:58:12 [build] Collecting build info...\n18:58:12 [build] ✓ Completed in 239ms.\n18:58:12 [build] Building static entrypoints...\n18:58:13 [vite] ✓ built in 717ms\n18:58:13 [vite] ✓ built in 44ms\n18:58:13 [build] Rearranging server assets...\n\n generating static routes \n18:58:13   ├─ /404.html (+7ms) \n18:58:13   ├─ /activities/qa-latest-seminar/index.html (+2ms) \n18:58:13   ├─ /activities/qa-undergraduate-lecture/index.html (+1ms) \n18:58:13   ├─ /activities/qa-external-talk/index.html (+1ms) \n18:58:13   ├─ /activities/qa-undated-activity/index.html (+1ms) \n18:58:13   ├─ /activities/index.html (+2ms) \n18:58:13   ├─ /alumni/index.html (+1ms) \n18:58:13   ├─ /contact/index.html (+1ms) \n18:58:13   ├─ /gallery/group-photo-2025-01-10/index.html (+3ms) \n18:58:13   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:58:13   ├─ /gallery/index.html (+1ms) \n18:58:13   ├─ /news/xenonnt-solar-pp-preview/index.html (+1ms) \n18:58:13   ├─ /news/index.html (+2ms) \n18:58:13   ├─ /opening/index.html (+2ms) \n18:58:13   ├─ /people/index.html (+2ms) \n18:58:13   ├─ /publication/index.html (+2ms) \n18:58:13   ├─ /research/index.html (+2ms) \n18:58:13   ├─ /robots.txt (+1ms) \n18:58:13   ├─ /sitemap.xml (+1ms) \n18:58:13   ├─ /haoyun-liu/index.html (+1ms) \n18:58:13   ├─ /hongkun-li/index.html (+1ms) \n18:58:13   ├─ /huayu-dai/index.html (+1ms) \n18:58:13   ├─ /jiafu-li/index.html (+1ms) \n18:58:13   ├─ /jingqiang-ye/index.html (+1ms) \n18:58:13   ├─ /tianyuan-zha/index.html (+1ms) \n18:58:13   ├─ /xiaoling-cheng/index.html (+0ms) \n18:58:13   ├─ /yuanyuan-ren/index.html (+0ms) \n18:58:13   ├─ /zixi-chen/index.html (+0ms) \n18:58:13   ├─ /index.html (+2ms) \n18:58:13 ✓ Completed in 53ms.\n\n18:58:13 [build] ✓ Completed in 841ms.\n18:58:13 [build] 27 page(s) built in 1.09s\n18:58:13 [build] Complete!\n"
+  },
+  {
+    "name": "draft-only-activities-still-have-visible-homepage-entry",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "] Syncing content\n18:58:19 [content] Synced content\n18:58:19 [types] Generated 264ms\n18:58:19 [build] output: \"static\"\n18:58:19 [build] mode: \"static\"\n18:58:19 [build] directory: /private/var/folders/q0/m6kgbn3946x6kr5_s7rgnzl40000gn/T/group-activities-qa-5997oopy/dist/\n18:58:19 [build] Collecting build info...\n18:58:19 [build] ✓ Completed in 278ms.\n18:58:19 [build] Building static entrypoints...\n18:58:20 [vite] ✓ built in 707ms\n18:58:20 [vite] ✓ built in 64ms\n18:58:20 [build] Rearranging server assets...\n\n generating static routes \n18:58:20   ├─ /404.html (+7ms) \n18:58:20   ├─ /activities/index.html (+2ms) \n18:58:20   ├─ /alumni/index.html (+1ms) \n18:58:20   ├─ /contact/index.html (+2ms) \n18:58:20   ├─ /gallery/group-photo-2025-01-10/index.html (+2ms) \n18:58:20   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:58:20   ├─ /gallery/index.html (+1ms) \n18:58:20   ├─ /news/xenonnt-solar-pp-preview/index.html (+1ms) \n18:58:20   ├─ /news/index.html (+4ms) \n18:58:20   ├─ /opening/index.html (+2ms) \n18:58:20   ├─ /people/index.html (+2ms) \n18:58:20   ├─ /publication/index.html (+2ms) \n18:58:20   ├─ /research/index.html (+1ms) \n18:58:20   ├─ /robots.txt (+0ms) \n18:58:20   ├─ /sitemap.xml (+1ms) \n18:58:20   ├─ /haoyun-liu/index.html (+1ms) \n18:58:20   ├─ /hongkun-li/index.html (+1ms) \n18:58:20   ├─ /huayu-dai/index.html (+1ms) \n18:58:20   ├─ /jiafu-li/index.html (+0ms) \n18:58:20   ├─ /jingqiang-ye/index.html (+1ms) \n18:58:20   ├─ /tianyuan-zha/index.html (+1ms) \n18:58:20   ├─ /xiaoling-cheng/index.html (+1ms) \n18:58:20   ├─ /yuanyuan-ren/index.html (+1ms) \n18:58:20   ├─ /zixi-chen/index.html (+1ms) \n18:58:20   ├─ /index.html (+3ms) \n18:58:20 ✓ Completed in 53ms.\n\n18:58:20 [build] ✓ Completed in 855ms.\n18:58:20 [build] 23 page(s) built in 1.14s\n18:58:20 [build] Complete!\n"
+  },
+  {
+    "name": "reject-null-activities-root",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json: root must be an array\n"
+  },
+  {
+    "name": "reject-false-activities-root",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json: root must be an array\n"
+  },
+  {
+    "name": "reject-zero-activities-root",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json: root must be an array\n"
+  },
+  {
+    "name": "reject-empty-string-activities-root",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json: root must be an array\n"
+  },
+  {
+    "name": "reject-object-activities-root",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json: root must be an array\n"
+  },
+  {
+    "name": "reject-duplicate-activity-slugs",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[1].slug: duplicate activity slug \"qa-undated-activity\"\n"
+  },
+  {
+    "name": "reject-impossible-activity-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].date: must be a real event date (YYYY-MM-DD)\n"
+  },
+  {
+    "name": "reject-unknown-activity-category",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].category: must be Seminar, External Talk or Undergraduate Lecture\n"
+  },
+  {
+    "name": "reject-invalid-activity-status",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].status: must be draft or published\n"
+  },
+  {
+    "name": "reject-activity-missing-title",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].title: required value is missing\n"
+  },
+  {
+    "name": "reject-activity-wrong-optional-type",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].speaker: must be a non-empty string when provided\n"
+  },
+  {
+    "name": "reject-missing-activity-image",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].image: local file is missing at public/assets/images/qa-missing.jpg\n"
+  },
+  {
+    "name": "reject-unlabelled-activity-image",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].image_alt: required value is missing\n"
+  },
+  {
+    "name": "reject-orphan-activity-album",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].related_albums: unknown album slug \"qa-missing-album\"\n"
+  },
+  {
+    "name": "reject-unsafe-activity-source-url",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0].source_url: must be an absolute http(s) URL\n"
+  },
+  {
+    "name": "reject-unknown-activity-field",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- activities.json[0]: unknown field \"invented_field\"\n"
+  },
+  {
+    "name": "reject-activity-preview-limit-0",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- settings.json.homepage.activityPreviewLimit: must be at least 1\n"
+  },
+  {
+    "name": "reject-activity-preview-limit-6",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- settings.json.homepage.activityPreviewLimit: must be at most 5\n"
+  },
+  {
+    "name": "reject-member-route-collision-with-activities",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- src/content/members/activities.md: slug \"activities\" collides with a static route\n"
+  }
+]

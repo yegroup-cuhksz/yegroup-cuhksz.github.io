@@ -1,0 +1,42 @@
+---
+import { phoneDial, settings } from '../lib/content';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-main container">
+    <div class="footer-identity">
+      <p class="footer-title">{settings.name}</p>
+      <p>
+        {settings.school}<br />
+        {settings.institution}<br />
+        {settings.address[2]}<br />
+        {settings.address[3]}
+      </p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <p class="eyebrow">Explore</p>
+      <a href="/people/">People</a>
+      <a href="/alumni/">Alumni</a>
+      <a href="/publication/">Publications</a>
+      <a href="/activities/">Activities</a>
+      <a href="/gallery/">Gallery</a>
+      <a href="/opening/">Openings</a>
+      <a href="/news/">News archive</a>
+    </nav>
+    <div class="footer-contact">
+      <p class="eyebrow">Contact</p>
+      <p>
+        <a href={`mailto:${settings.email}`}>{settings.email}</a><br />
+        <a href={`tel:${phoneDial}`}>{settings.phone}</a>
+      </p>
+      <a class="footer-university" href={settings.universityUrl} rel="noopener noreferrer">
+        CUHK-Shenzhen website <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© {year} {settings.name}. All rights reserved.</p>
+    <p>{settings.school} · {settings.institutionShort}</p>
+  </div>
+</footer>

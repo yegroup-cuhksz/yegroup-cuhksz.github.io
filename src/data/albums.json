@@ -1,0 +1,73 @@
+[
+  {
+    "slug": "xenon-collaboration-meeting-2026-beijing",
+    "title": "XENON Collaboration Meeting 2026, Beijing",
+    "category": "Conference",
+    "date": "2026-10",
+    "date_precision": "month",
+    "location": "Beijing, China",
+    "cover": "/assets/images/group_photo/2026CM_Beijing/WechatIMG3905.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/group_photo/2026CM_Beijing/WechatIMG3905.jpg",
+        "alt": "Group members standing in front of the XENON Collaboration Meeting 2026 banner at Tsinghua University.",
+        "caption": "The group at the XENON Collaboration Meeting 2026, Tsinghua University, Beijing. From left to right: Jiafu, Haoyun, Zhaowei, Jingqiang, Elena, Jie (David), Huayu, Hongkun."
+      },
+      {
+        "image": "/assets/images/group_photo/2026CM_Beijing/WechatIMG3906.jpg",
+        "alt": "Group members raising glasses together during the meeting dinner.",
+        "caption": "Celebrating together after the collaboration meeting."
+      },
+      {
+        "image": "/assets/images/group_photo/2026CM_Beijing/WechatIMG3907.jpg",
+        "alt": "Group members standing together outside a lantern-lit restaurant in Beijing.",
+        "caption": "An evening together in Beijing."
+      }
+    ]
+  },
+  {
+    "slug": "group-photo-2026-09",
+    "title": "Group photo, September 2026",
+    "category": "Group Life",
+    "date": "2026-09",
+    "date_precision": "month",
+    "cover": "/assets/images/group_photo/202609.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/group_photo/202609.jpg",
+        "alt": "Group photograph, September 2026.",
+        "caption": "Group photo @Sep. 2026. From left to right: Jingqiang, Kexin, Haoyun, Hongkun, Tianyuan, Jie (David), Huayu, Zixi, Shenyu."
+      }
+    ]
+  },
+  {
+    "slug": "group-photo-2025-01-10",
+    "title": "Group photo, January 2025",
+    "category": "Group Life",
+    "date": "2025-01-10",
+    "date_precision": "day",
+    "cover": "/assets/images/group_photo/groupphoto_20250110-1.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/group_photo/groupphoto_20250110-1.jpg",
+        "alt": "Six group members standing together on a campus lawn in front of a tall tower.",
+        "caption": "Group photo @Jan. 10, 2025. From left to right: Jie (David), Tianyuan, Yuanyuan, Jingqiang, Huayu, Zhaowei."
+      }
+    ]
+  },
+  {
+    "slug": "group-photo-2024-07-11",
+    "title": "Group photo, July 2024",
+    "category": "Group Life",
+    "date": "2024-07-11",
+    "date_precision": "day",
+    "cover": "/assets/images/group_photo/groupphoto_20240711.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/group_photo/groupphoto_20240711.jpg",
+        "alt": "Six group members standing behind a large SSE sign inside a building.",
+        "caption": "Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam)."
+      }
+    ]
+  }
+]

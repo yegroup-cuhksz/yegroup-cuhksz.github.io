@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Jie Tang",
+    "role": "BSc student",
+    "period": "2024–2026",
+    "destination": "Now a master's student at Nagoya University.",
+    "sort_order": 1
+  },
+  {
+    "name": "Yuechen Li",
+    "role": "BSc student",
+    "period": "2025–2026",
+    "destination": "Now an exchange student at the University of Oxford.",
+    "sort_order": 2
+  },
+  {
+    "name": "Zhaowei Song",
+    "role": "Research assistant",
+    "period": "2024–2026",
+    "destination": "Now a PhD student at Westlake University.",
+    "sort_order": 3
+  },
+  {
+    "name": "Zhangjian Liang",
+    "role": "Research assistant",
+    "period": "2024",
+    "destination": "Now a graduate student at CityU-Dongguan.",
+    "sort_order": 4
+  },
+  {
+    "name": "Haowen Si",
+    "role": "BSc student",
+    "period": "2024",
+    "destination": "Now a graduate student at the University of Amsterdam.",
+    "sort_order": 5
+  },
+  {
+    "name": "Tingyi He",
+    "role": "Summer student",
+    "period": "2024",
+    "destination": "Now a graduate student at the University of Amsterdam.",
+    "sort_order": 6
+  },
+  {
+    "name": "Linzheng Tan",
+    "role": "BSc student",
+    "period": "2024",
+    "destination": "Now an undergraduate student at CUHK-Shenzhen.",
+    "sort_order": 7
+  }
+]

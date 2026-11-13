@@ -1,0 +1,76 @@
+---
+import type { Publication } from '../lib/content';
+import { publicationYears } from '../lib/content';
+
+interface Props {
+  items: Publication[];
+  controls?: boolean;
+  compact?: boolean;
+}
+
+const { items, controls = false, compact = false } = Astro.props;
+const yearOptions = publicationYears.filter((year) => items.some((item) => item.year === year));
+---
+
+{
+  controls && (
+    <div class="publication-controls" data-publication-controls hidden>
+      <div class="search-field">
+        <label for="publication-search">Search publications</label>
+        <input
+          id="publication-search"
+          type="search"
+          placeholder="Title, author or venue"
+          autocomplete="off"
+          data-publication-search
+        />
+      </div>
+      <div class="year-field">
+        <label for="publication-year">Year</label>
+        <select id="publication-year" data-publication-year>
+          <option value="">All years</option>
+          {yearOptions.map((year) => <option value={year}>{year}</option>)}
+        </select>
+      </div>
+      <button type="button" class="clear-button" id="clear-filters" data-publication-reset>
+        Clear filters
+      </button>
+      <p class="result-count" id="publication-count" aria-live="polite">
+        {items.length} publication{items.length === 1 ? '' : 's'}
+      </p>
+    </div>
+  )
+}
+
+<ol class:list={['publication-list', { compact }]} data-publication-list>
+  {
+    items.map((item) => (
+      <li
+        class="publication-row"
+        id={item.id}
+        data-publication
+        data-year={item.year}
+        data-search={`${item.title} ${item.authors} ${item.venue} ${item.year} ${item.id}`.toLowerCase()}
+      >
+        <p class="publication-year">{item.year}</p>
+        <div class="publication-content">
+          {item.featured && !compact && <span class="publication-badge">Representative paper</span>}
+          <h3>
+            <a href={item.url} rel="noopener noreferrer">{item.title}</a>
+          </h3>
+          <p class="publication-authors">{item.authors}</p>
+          <p class="publication-venue">{item.venue}</p>
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+{
+  controls && (
+    <div class="no-results" id="no-results" hidden>
+      <h2>No matching publications</h2>
+      <p>Try a different keyword or year, or clear the filters to show the complete list.</p>
+    </div>
+  )
+}

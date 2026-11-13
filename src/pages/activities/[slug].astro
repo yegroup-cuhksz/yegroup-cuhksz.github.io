@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocalImage from '../../components/LocalImage.astro';
+import { albumBySlug, formatIsoDate, publishedActivities } from '../../lib/content';
+
+export async function getStaticPaths() {
+  return publishedActivities.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+const paragraphs = item.body?.split(/\n{2,}/).map((paragraph) => paragraph.trim()).filter(Boolean) ?? [];
+const relatedAlbums = (item.related_albums ?? [])
+  .map((slug) => albumBySlug.get(slug))
+  .filter((album) => album !== undefined);
+const speakerLabel = item.speaker
+  ? `Speaker: ${item.speaker}${item.affiliation ? `, ${item.affiliation}` : ''}`
+  : item.affiliation;
+const hasMeta = Boolean(
+  item.date || item.time || speakerLabel || item.host || item.venue,
+);
+---
+
+<BaseLayout title={item.title} description={item.summary} image={item.image}>
+  <div class="container breadcrumb">
+    <a href="/activities/">Activities</a> / {item.category}
+  </div>
+
+  <article class="container news-article activity-article">
+    <header class="news-article-header">
+      <p class="eyebrow">{item.category}</p>
+      <h1>{item.title}</h1>
+      {
+        hasMeta && (
+          <div class="news-article-meta activity-article-meta">
+            {item.date && <time datetime={item.date}>{formatIsoDate(item.date)}</time>}
+            {item.time && <span>{item.time}</span>}
+            {speakerLabel && <span>{speakerLabel}</span>}
+            {item.host && <span>Host: {item.host}</span>}
+            {item.venue && <span>{item.venue}</span>}
+          </div>
+        )
+      }
+      <p class="news-article-summary">{item.summary}</p>
+    </header>
+
+    {
+      item.image && (
+        <figure class="news-article-image">
+          <LocalImage
+            src={item.image}
+            alt={item.image_alt ?? item.title}
+            sizes="(max-width: 800px) 100vw, 800px"
+          />
+        </figure>
+      )
+    }
+
+    {
+      paragraphs.length > 0 && (
+        <div class="prose news-article-body">
+          {paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      )
+    }
+
+    {
+      item.photos && item.photos.length > 0 && (
+        <div class="activity-photos">
+          {item.photos.map((photo) => (
+            <figure class="activity-photo">
+              <LocalImage
+                src={photo.image}
+                alt={photo.alt}
+                sizes="(max-width: 800px) 100vw, 390px"
+              />
+              {photo.caption && <figcaption>{photo.caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      )
+    }
+
+    {
+      (relatedAlbums.length > 0 || item.source_url) && (
+        <aside class="news-related">
+          <h2>Related</h2>
+          <ul>
+            {relatedAlbums.map((album) => (
+              <li><a href={`/gallery/${album.slug}/`}>{album.title}</a></li>
+            ))}
+            {item.source_url && (
+              <li>
+                <a href={item.source_url} rel="noopener noreferrer">
+                  {item.source_label ?? 'Source'}
+                </a>
+              </li>
+            )}
+          </ul>
+        </aside>
+      )
+    }
+  </article>
+</BaseLayout>

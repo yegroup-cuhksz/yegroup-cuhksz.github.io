@@ -1,0 +1,157 @@
+[
+  {
+    "id": "xenonnt-quantum-collapse-2026",
+    "title": "Challenging spontaneous quantum collapse with the XENONnT dark matter detector",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2026,
+    "venue": "Phys. Rev. Lett. 136, 120201 (2026)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/2jm3-4976",
+    "order": 1,
+    "featured": false
+  },
+  {
+    "id": "xenonnt-light-dark-matter-2025",
+    "title": "Search for Light Dark Matter in Low-Energy Ionization Signals from XENONnT",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2025,
+    "venue": "Phys. Rev. Lett. 134, 161004 (2025)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.161004",
+    "order": 1,
+    "featured": true,
+    "featured_order": 2
+  },
+  {
+    "id": "xenonnt-solar-cevns-2024",
+    "title": "First Indication of Solar ⁸B Neutrinos via Coherent Elastic Neutrino-Nucleus Scattering with XENONnT",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2024,
+    "venue": "Phys. Rev. Lett. 133, 191002 (2024)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.191002",
+    "order": 1,
+    "featured": true,
+    "featured_order": 1
+  },
+  {
+    "id": "relics-experiment-2024",
+    "title": "REactor neutrino LIquid xenon Coherent elastic Scattering experiment",
+    "authors": "C. Cai et al. (RELICS Collaboration)",
+    "year": 2024,
+    "venue": "Phys. Rev. D 110, 072011 (2024)",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.072011",
+    "order": 2,
+    "featured": true,
+    "featured_order": 3
+  },
+  {
+    "id": "xenonnt-first-dark-matter-2023",
+    "title": "First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2023,
+    "venue": "Phys. Rev. Lett. 131, 041003 (2023)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.041003",
+    "order": 1,
+    "featured": true,
+    "featured_order": 4
+  },
+  {
+    "id": "xenonnt-bayesian-network-2023",
+    "title": "Detector signal characterization with a Bayesian network in XENONnT",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2023,
+    "venue": "Phys. Rev. D 108, 012016 (2023)",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.012016",
+    "order": 2,
+    "featured": false
+  },
+  {
+    "id": "xenonnt-new-physics-2022",
+    "title": "Search for New Physics in Electronic Recoil Data from XENONnT",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2022,
+    "venue": "Phys. Rev. Lett. 129, 161805 (2022)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.161805",
+    "order": 1,
+    "featured": true,
+    "featured_order": 5
+  },
+  {
+    "id": "snowmass-puzzling-excesses-2022",
+    "title": "Snowmass2021 Cosmic Frontier White Paper: Puzzling Excesses in Dark Matter Searches and How to Resolve Them",
+    "authors": "R. Leane et al.",
+    "year": 2022,
+    "venue": "arXiv:2203.06859 (2022)",
+    "url": "https://arxiv.org/abs/2203.06859",
+    "order": 2,
+    "featured": false
+  },
+  {
+    "id": "sealed-lxe-tpc-2021",
+    "title": "Development and performance of a sealed liquid xenon time projection chamber",
+    "authors": "Y. Wei, J. Long, F. Lombardi, Z. Jiang, J. Ye and K. Ni",
+    "year": 2021,
+    "venue": "JINST 16 P01018 (2021)",
+    "url": "https://iopscience.iop.org/article/10.1088/1748-0221/16/01/P01018",
+    "order": 1,
+    "featured": false
+  },
+  {
+    "id": "xenon1t-excess-2020",
+    "title": "Excess Electronic Recoil Events in XENON1T",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2020,
+    "venue": "Phys. Rev. D. 102, 072004 (2020)",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.072004",
+    "order": 1,
+    "featured": false
+  },
+  {
+    "id": "xenon1t-data-analysis-2019",
+    "title": "XENON1T Dark Matter Data Analysis: Signal Reconstruction, Calibration and Event Selection",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2019,
+    "venue": "Phys. Rev. D 100, 052014 (2019)",
+    "url": "https://dx.doi.org/10.1103/PhysRevD.100.052014",
+    "order": 1,
+    "featured": false
+  },
+  {
+    "id": "xenon1t-double-electron-capture-2019",
+    "title": "Observation of Two-neutrino Double Electron Capture in ¹²⁴Xe with XENON1T",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2019,
+    "venue": "Nature 568, 532-535 (2019)",
+    "url": "https://www.nature.com/articles/s41586-019-1124-4",
+    "order": 2,
+    "featured": false
+  },
+  {
+    "id": "xenon1t-one-ton-year-2018",
+    "title": "Dark matter search results from a one ton-year exposure of XENON1T",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2018,
+    "venue": "Phys. Rev. Lett. 121, 111302 (2018)",
+    "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.111302",
+    "order": 1,
+    "featured": false
+  },
+  {
+    "id": "lxe-signal-yields-2018",
+    "title": "Signal yields of keV electronic recoils and their discrimination from nuclear recoils in liquid xenon",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2018,
+    "venue": "Phys. Rev. D 97, 092007 (2018)",
+    "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092007",
+    "order": 2,
+    "featured": false
+  },
+  {
+    "id": "xenon1t-first-results-2017",
+    "title": "First Dark Matter Search Results from the XENON1T Experiment",
+    "authors": "E. Aprile et al. (XENON Collaboration)",
+    "year": 2017,
+    "venue": "Phys. Rev. Lett. 119, 181301 (2017)",
+    "url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.119.181301",
+    "order": 1,
+    "featured": false
+  }
+]

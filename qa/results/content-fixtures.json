@@ -1,0 +1,162 @@
+[
+  {
+    "name": "baseline-validation",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation passed. 9 members 2 research projects 1 openings record(s) 7 alumni 15 publications (5 featured) 2 gallery albums 0 news items\n"
+  },
+  {
+    "name": "reject-duplicate-publication-id",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 2 error(s):\n- publications.json[15].id: duplicate publication id \"xenonnt-quantum-collapse-2026\"\n- publications.json[15]: duplicate explicit secondary order 1 within year 2026\n"
+  },
+  {
+    "name": "reject-impossible-news-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- news.json[0].date: must be a real announcement date\n"
+  },
+  {
+    "name": "reject-orphan-news-reference",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- news.json[0].related_publications: unknown publication id \"nonexistent-id\"\n"
+  },
+  {
+    "name": "reject-homepage-news-limit-over-five",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- settings.json.homepage.newsLimit: must be at most 5\n"
+  },
+  {
+    "name": "reject-missing-image",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 2 error(s):\n- albums.json[0].photos[0].image: local file is missing at public/assets/images/does-not-exist.jpg\n- albums.json[0].cover: must match one of the album photographs\n"
+  },
+  {
+    "name": "reject-duplicate-member-slug",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 2 error(s):\n- src/content/members/qa-duplicate.md: duplicate member slug \"haoyun-liu\"\n- src/content/members/qa-duplicate.md: slug \"haoyun-liu\" must match filename \"qa-duplicate\"\n"
+  },
+  {
+    "name": "reject-impossible-unquoted-frontmatter-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- src/content/openings/positions.md: last_reviewed must be a real ISO date (YYYY-MM-DD), received \"2026-02-30\"\n"
+  },
+  {
+    "name": "build-rejects-impossible-unquoted-frontmatter-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 build\n> node scripts/generate-media.mjs && node scripts/validate-content.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build\n\ngenerated e181_1.png (3 WebP variants)\ngenerated groupphoto_20240711.jpg (5 WebP variants)\ngenerated groupphoto_20250110-1.jpg (5 WebP variants)\ngenerated haoyun.jpeg (6 WebP variants)\ngenerated jiafuli.png (4 WebP variants)\ngenerated jingqiang2-689642022-e1732801026118.jpg (3 WebP variants)\ngenerated logo_standard.png (2 WebP variants)\ngenerated relics_logo.jpg (2 WebP variants)\ngenerated renyuanyuan-346225708-e1732800139141.jpeg (4 WebP variants)\ngenerated tempimagetm8w31.jpg (6 WebP variants)\ngenerated tempimageu02rr4.jpg (3 WebP variants)\ngenerated tianyuanzha.jpg (3 WebP variants)\ngenerated xiaolingcheng-2.jpg (4 WebP variants)\ngenerated xiaolingcheng1.jpg (4 WebP variants)\ngenerated yejingqiang1.jpg (4 WebP variants)\ngenerated zixichen-e1747299946193.jpg (5 WebP variants)\nWrote 16 image records to public/media/manifest.json\nContent validation failed with 1 error(s):\n- src/content/openings/positions.md: last_reviewed must be a real ISO date (YYYY-MM-DD), received \"2026-02-30\"\n"
+  },
+  {
+    "name": "reject-impossible-quoted-frontmatter-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- src/content/openings/positions.md: last_reviewed must be a real ISO date (YYYY-MM-DD), received \"2026-02-30\"\n"
+  },
+  {
+    "name": "build-rejects-impossible-quoted-frontmatter-date",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 build\n> node scripts/generate-media.mjs && node scripts/validate-content.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build\n\ngenerated e181_1.png (3 WebP variants)\ngenerated groupphoto_20240711.jpg (5 WebP variants)\ngenerated groupphoto_20250110-1.jpg (5 WebP variants)\ngenerated haoyun.jpeg (6 WebP variants)\ngenerated jiafuli.png (4 WebP variants)\ngenerated jingqiang2-689642022-e1732801026118.jpg (3 WebP variants)\ngenerated logo_standard.png (2 WebP variants)\ngenerated relics_logo.jpg (2 WebP variants)\ngenerated renyuanyuan-346225708-e1732800139141.jpeg (4 WebP variants)\ngenerated tempimagetm8w31.jpg (6 WebP variants)\ngenerated tempimageu02rr4.jpg (3 WebP variants)\ngenerated tianyuanzha.jpg (3 WebP variants)\ngenerated xiaolingcheng-2.jpg (4 WebP variants)\ngenerated xiaolingcheng1.jpg (4 WebP variants)\ngenerated yejingqiang1.jpg (4 WebP variants)\ngenerated zixichen-e1747299946193.jpg (5 WebP variants)\nWrote 16 image records to public/media/manifest.json\nContent validation failed with 1 error(s):\n- src/content/openings/positions.md: last_reviewed must be a real ISO date (YYYY-MM-DD), received \"2026-02-30\"\n"
+  },
+  {
+    "name": "support-truthful-month-only-album-date",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "lecting build info...\n18:27:33 [build] ✓ Completed in 354ms.\n18:27:33 [build] Building static entrypoints...\n18:27:34 [vite] ✓ built in 549ms\n18:27:34 [vite] ✓ built in 44ms\n18:27:34 [build] Rearranging server assets...\n\n generating static routes \n18:27:34   ├─ /404.html (+6ms) \n18:27:34   ├─ /alumni/index.html (+2ms) \n18:27:34   ├─ /contact/index.html (+2ms) \n18:27:34   ├─ /gallery/group-photo-2025-01-10/index.html (+2ms) \n18:27:34   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:27:34   ├─ /gallery/index.html (+1ms) \n18:27:34   ├─ /news/index.html (+2ms) \n18:27:34   ├─ /opening/index.html (+2ms) \n18:27:34   ├─ /people/index.html (+3ms) \n18:27:34   ├─ /publication/index.html (+2ms) \n18:27:34   ├─ /research/index.html (+1ms) \n18:27:34   ├─ /robots.txt (+1ms) \n18:27:34   ├─ /sitemap.xml (+1ms) \n18:27:34   ├─ /haoyun-liu/index.html (+1ms) \n18:27:34   ├─ /hongkun-li/index.html (+1ms) \n18:27:34   ├─ /huayu-dai/index.html (+1ms) \n18:27:34   ├─ /jiafu-li/index.html (+0ms) \n18:27:34   ├─ /jingqiang-ye/index.html (+1ms) \n18:27:34   ├─ /tianyuan-zha/index.html (+1ms) \n18:27:34   ├─ /xiaoling-cheng/index.html (+1ms) \n18:27:34   ├─ /yuanyuan-ren/index.html (+0ms) \n18:27:34   ├─ /zixi-chen/index.html (+1ms) \n18:27:34   ├─ /index.html (+2ms) \n18:27:34 ✓ Completed in 43ms.\n\n18:27:34 [build] ✓ Completed in 662ms.\n18:27:34 [build] 21 page(s) built in 1.02s\n18:27:34 [build] Complete!\n"
+  },
+  {
+    "name": "support-truthful-year-only-album-date",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "lecting build info...\n18:27:40 [build] ✓ Completed in 244ms.\n18:27:40 [build] Building static entrypoints...\n18:27:41 [vite] ✓ built in 582ms\n18:27:41 [vite] ✓ built in 42ms\n18:27:41 [build] Rearranging server assets...\n\n generating static routes \n18:27:41   ├─ /404.html (+7ms) \n18:27:41   ├─ /alumni/index.html (+2ms) \n18:27:41   ├─ /contact/index.html (+1ms) \n18:27:41   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:27:41   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:27:41   ├─ /gallery/index.html (+1ms) \n18:27:41   ├─ /news/index.html (+1ms) \n18:27:41   ├─ /opening/index.html (+1ms) \n18:27:41   ├─ /people/index.html (+3ms) \n18:27:41   ├─ /publication/index.html (+2ms) \n18:27:41   ├─ /research/index.html (+1ms) \n18:27:41   ├─ /robots.txt (+1ms) \n18:27:41   ├─ /sitemap.xml (+1ms) \n18:27:41   ├─ /haoyun-liu/index.html (+1ms) \n18:27:41   ├─ /hongkun-li/index.html (+1ms) \n18:27:41   ├─ /huayu-dai/index.html (+1ms) \n18:27:41   ├─ /jiafu-li/index.html (+1ms) \n18:27:41   ├─ /jingqiang-ye/index.html (+1ms) \n18:27:41   ├─ /tianyuan-zha/index.html (+1ms) \n18:27:41   ├─ /xiaoling-cheng/index.html (+1ms) \n18:27:41   ├─ /yuanyuan-ren/index.html (+0ms) \n18:27:41   ├─ /zixi-chen/index.html (+1ms) \n18:27:41   ├─ /index.html (+2ms) \n18:27:41 ✓ Completed in 42ms.\n\n18:27:41 [build] ✓ Completed in 694ms.\n18:27:41 [build] 21 page(s) built in 947ms\n18:27:41 [build] Complete!\n"
+  },
+  {
+    "name": "reject-mismatched-album-date-precision",
+    "status": "PASS",
+    "exit_code": 1,
+    "expected_success": false,
+    "detail": "",
+    "output_tail": "\n> ye-group-website@1.0.0 check\n> node scripts/validate-content.mjs\n\nContent validation failed with 1 error(s):\n- albums.json[0].date: date must use YYYY-MM-DD when date_precision is day\n"
+  },
+  {
+    "name": "alumni-without-period-or-destination",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "lecting build info...\n18:27:47 [build] ✓ Completed in 243ms.\n18:27:47 [build] Building static entrypoints...\n18:27:47 [vite] ✓ built in 557ms\n18:27:47 [vite] ✓ built in 65ms\n18:27:47 [build] Rearranging server assets...\n\n generating static routes \n18:27:47   ├─ /404.html (+6ms) \n18:27:47   ├─ /alumni/index.html (+1ms) \n18:27:47   ├─ /contact/index.html (+1ms) \n18:27:47   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:27:47   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:27:47   ├─ /gallery/index.html (+1ms) \n18:27:47   ├─ /news/index.html (+1ms) \n18:27:47   ├─ /opening/index.html (+1ms) \n18:27:47   ├─ /people/index.html (+3ms) \n18:27:47   ├─ /publication/index.html (+2ms) \n18:27:47   ├─ /research/index.html (+2ms) \n18:27:47   ├─ /robots.txt (+1ms) \n18:27:47   ├─ /sitemap.xml (+1ms) \n18:27:47   ├─ /haoyun-liu/index.html (+1ms) \n18:27:47   ├─ /hongkun-li/index.html (+1ms) \n18:27:47   ├─ /huayu-dai/index.html (+1ms) \n18:27:47   ├─ /jiafu-li/index.html (+0ms) \n18:27:47   ├─ /jingqiang-ye/index.html (+1ms) \n18:27:47   ├─ /tianyuan-zha/index.html (+1ms) \n18:27:47   ├─ /xiaoling-cheng/index.html (+1ms) \n18:27:47   ├─ /yuanyuan-ren/index.html (+0ms) \n18:27:47   ├─ /zixi-chen/index.html (+1ms) \n18:27:47   ├─ /index.html (+2ms) \n18:27:47 ✓ Completed in 42ms.\n\n18:27:47 [build] ✓ Completed in 692ms.\n18:27:47 [build] 21 page(s) built in 944ms\n18:27:47 [build] Complete!\n"
+  },
+  {
+    "name": "published-news-order-limit-and-draft-exclusion",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "anging server assets...\n\n generating static routes \n18:27:54   ├─ /404.html (+6ms) \n18:27:54   ├─ /alumni/index.html (+2ms) \n18:27:54   ├─ /contact/index.html (+1ms) \n18:27:54   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:27:54   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:27:54   ├─ /gallery/index.html (+1ms) \n18:27:54   ├─ /news/qa-news-4/index.html (+1ms) \n18:27:54   ├─ /news/qa-news-3/index.html (+1ms) \n18:27:54   ├─ /news/qa-news-2/index.html (+2ms) \n18:27:54   ├─ /news/qa-news-1/index.html (+1ms) \n18:27:54   ├─ /news/index.html (+2ms) \n18:27:54   ├─ /opening/index.html (+1ms) \n18:27:54   ├─ /people/index.html (+2ms) \n18:27:54   ├─ /publication/index.html (+1ms) \n18:27:54   ├─ /research/index.html (+1ms) \n18:27:54   ├─ /robots.txt (+0ms) \n18:27:54   ├─ /sitemap.xml (+1ms) \n18:27:54   ├─ /haoyun-liu/index.html (+1ms) \n18:27:54   ├─ /hongkun-li/index.html (+1ms) \n18:27:54   ├─ /huayu-dai/index.html (+1ms) \n18:27:54   ├─ /jiafu-li/index.html (+1ms) \n18:27:54   ├─ /jingqiang-ye/index.html (+0ms) \n18:27:54   ├─ /tianyuan-zha/index.html (+1ms) \n18:27:54   ├─ /xiaoling-cheng/index.html (+0ms) \n18:27:54   ├─ /yuanyuan-ren/index.html (+0ms) \n18:27:54   ├─ /zixi-chen/index.html (+0ms) \n18:27:54   ├─ /index.html (+2ms) \n18:27:54 ✓ Completed in 44ms.\n\n18:27:54 [build] ✓ Completed in 665ms.\n18:27:54 [build] 25 page(s) built in 915ms\n18:27:54 [build] Complete!\n"
+  },
+  {
+    "name": "content-only-additions-and-optional-fields",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": ":28:01 [vite] ✓ built in 594ms\n18:28:01 [vite] ✓ built in 65ms\n18:28:01 [build] Rearranging server assets...\n\n generating static routes \n18:28:01   ├─ /404.html (+5ms) \n18:28:01   ├─ /alumni/index.html (+2ms) \n18:28:01   ├─ /contact/index.html (+1ms) \n18:28:01   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:28:01   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:28:01   ├─ /gallery/qa-fixture-album/index.html (+1ms) \n18:28:01   ├─ /gallery/index.html (+2ms) \n18:28:01   ├─ /news/index.html (+2ms) \n18:28:01   ├─ /opening/index.html (+2ms) \n18:28:01   ├─ /people/index.html (+2ms) \n18:28:01   ├─ /publication/index.html (+2ms) \n18:28:01   ├─ /research/index.html (+1ms) \n18:28:01   ├─ /robots.txt (+1ms) \n18:28:01   ├─ /sitemap.xml (+1ms) \n18:28:01   ├─ /haoyun-liu/index.html (+1ms) \n18:28:01   ├─ /hongkun-li/index.html (+1ms) \n18:28:01   ├─ /huayu-dai/index.html (+1ms) \n18:28:01   ├─ /jiafu-li/index.html (+1ms) \n18:28:01   ├─ /jingqiang-ye/index.html (+1ms) \n18:28:01   ├─ /qa-fixture-member/index.html (+1ms) \n18:28:01   ├─ /tianyuan-zha/index.html (+0ms) \n18:28:01   ├─ /xiaoling-cheng/index.html (+0ms) \n18:28:01   ├─ /yuanyuan-ren/index.html (+1ms) \n18:28:01   ├─ /zixi-chen/index.html (+0ms) \n18:28:01   ├─ /index.html (+2ms) \n18:28:01 ✓ Completed in 43ms.\n\n18:28:01 [build] ✓ Completed in 729ms.\n18:28:01 [build] 23 page(s) built in 1.01s\n18:28:01 [build] Complete!\n"
+  },
+  {
+    "name": "empty-gallery-and-news-build",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "8:07 [build] directory: /private/var/folders/q0/m6kgbn3946x6kr5_s7rgnzl40000gn/T/group-page-qa-6em9pkbq/dist/\n18:28:07 [build] Collecting build info...\n18:28:07 [build] ✓ Completed in 242ms.\n18:28:07 [build] Building static entrypoints...\n18:28:07 [vite] ✓ built in 547ms\n18:28:07 [vite] ✓ built in 47ms\n18:28:07 [build] Rearranging server assets...\n\n generating static routes \n18:28:07   ├─ /404.html (+6ms) \n18:28:07   ├─ /alumni/index.html (+2ms) \n18:28:07   ├─ /contact/index.html (+1ms) \n18:28:07   ├─ /gallery/index.html (+1ms) \n18:28:07   ├─ /news/index.html (+2ms) \n18:28:07   ├─ /opening/index.html (+1ms) \n18:28:07   ├─ /people/index.html (+2ms) \n18:28:07   ├─ /publication/index.html (+2ms) \n18:28:07   ├─ /research/index.html (+3ms) \n18:28:07   ├─ /robots.txt (+1ms) \n18:28:07   ├─ /sitemap.xml (+1ms) \n18:28:07   ├─ /haoyun-liu/index.html (+1ms) \n18:28:07   ├─ /hongkun-li/index.html (+1ms) \n18:28:07   ├─ /huayu-dai/index.html (+1ms) \n18:28:07   ├─ /jiafu-li/index.html (+0ms) \n18:28:07   ├─ /jingqiang-ye/index.html (+1ms) \n18:28:07   ├─ /tianyuan-zha/index.html (+1ms) \n18:28:07   ├─ /xiaoling-cheng/index.html (+1ms) \n18:28:07   ├─ /yuanyuan-ren/index.html (+1ms) \n18:28:07   ├─ /zixi-chen/index.html (+2ms) \n18:28:07   ├─ /index.html (+2ms) \n18:28:07 ✓ Completed in 41ms.\n\n18:28:07 [build] ✓ Completed in 662ms.\n18:28:07 [build] 19 page(s) built in 914ms\n18:28:07 [build] Complete!\n"
+  },
+  {
+    "name": "single-album-build",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "7rgnzl40000gn/T/group-page-qa-6em9pkbq/dist/\n18:28:13 [build] Collecting build info...\n18:28:13 [build] ✓ Completed in 243ms.\n18:28:13 [build] Building static entrypoints...\n18:28:14 [vite] ✓ built in 556ms\n18:28:14 [vite] ✓ built in 76ms\n18:28:14 [build] Rearranging server assets...\n\n generating static routes \n18:28:14   ├─ /404.html (+6ms) \n18:28:14   ├─ /alumni/index.html (+1ms) \n18:28:14   ├─ /contact/index.html (+1ms) \n18:28:14   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:28:14   ├─ /gallery/index.html (+1ms) \n18:28:14   ├─ /news/index.html (+2ms) \n18:28:14   ├─ /opening/index.html (+1ms) \n18:28:14   ├─ /people/index.html (+2ms) \n18:28:14   ├─ /publication/index.html (+3ms) \n18:28:14   ├─ /research/index.html (+2ms) \n18:28:14   ├─ /robots.txt (+1ms) \n18:28:14   ├─ /sitemap.xml (+1ms) \n18:28:14   ├─ /haoyun-liu/index.html (+1ms) \n18:28:14   ├─ /hongkun-li/index.html (+0ms) \n18:28:14   ├─ /huayu-dai/index.html (+0ms) \n18:28:14   ├─ /jiafu-li/index.html (+0ms) \n18:28:14   ├─ /jingqiang-ye/index.html (+1ms) \n18:28:14   ├─ /tianyuan-zha/index.html (+1ms) \n18:28:14   ├─ /xiaoling-cheng/index.html (+1ms) \n18:28:14   ├─ /yuanyuan-ren/index.html (+1ms) \n18:28:14   ├─ /zixi-chen/index.html (+1ms) \n18:28:14   ├─ /index.html (+2ms) \n18:28:14 ✓ Completed in 41ms.\n\n18:28:14 [build] ✓ Completed in 698ms.\n18:28:14 [build] 20 page(s) built in 950ms\n18:28:14 [build] Complete!\n"
+  },
+  {
+    "name": "same-stem-image-derivatives-remain-distinct",
+    "status": "PASS",
+    "exit_code": 0,
+    "expected_success": true,
+    "detail": "",
+    "output_tail": "lecting build info...\n18:28:20 [build] ✓ Completed in 244ms.\n18:28:20 [build] Building static entrypoints...\n18:28:21 [vite] ✓ built in 556ms\n18:28:21 [vite] ✓ built in 45ms\n18:28:21 [build] Rearranging server assets...\n\n generating static routes \n18:28:21   ├─ /404.html (+6ms) \n18:28:21   ├─ /alumni/index.html (+2ms) \n18:28:21   ├─ /contact/index.html (+1ms) \n18:28:21   ├─ /gallery/group-photo-2025-01-10/index.html (+1ms) \n18:28:21   ├─ /gallery/group-photo-2024-07-11/index.html (+1ms) \n18:28:21   ├─ /gallery/index.html (+2ms) \n18:28:21   ├─ /news/index.html (+2ms) \n18:28:21   ├─ /opening/index.html (+2ms) \n18:28:21   ├─ /people/index.html (+3ms) \n18:28:21   ├─ /publication/index.html (+2ms) \n18:28:21   ├─ /research/index.html (+1ms) \n18:28:21   ├─ /robots.txt (+1ms) \n18:28:21   ├─ /sitemap.xml (+1ms) \n18:28:21   ├─ /haoyun-liu/index.html (+1ms) \n18:28:21   ├─ /hongkun-li/index.html (+1ms) \n18:28:21   ├─ /huayu-dai/index.html (+0ms) \n18:28:21   ├─ /jiafu-li/index.html (+1ms) \n18:28:21   ├─ /jingqiang-ye/index.html (+1ms) \n18:28:21   ├─ /tianyuan-zha/index.html (+1ms) \n18:28:21   ├─ /xiaoling-cheng/index.html (+1ms) \n18:28:21   ├─ /yuanyuan-ren/index.html (+0ms) \n18:28:21   ├─ /zixi-chen/index.html (+1ms) \n18:28:21   ├─ /index.html (+3ms) \n18:28:21 ✓ Completed in 46ms.\n\n18:28:21 [build] ✓ Completed in 673ms.\n18:28:21 [build] 21 page(s) built in 927ms\n18:28:21 [build] Complete!\n"
+  }
+]

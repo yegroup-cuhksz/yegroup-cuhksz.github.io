@@ -1,0 +1,774 @@
+{
+  "captured_at": "2026-11-12T08:09:16.011680+00:00",
+  "pages": {
+    "home": {
+      "url": "https://yegroup.cuhk.edu.cn/",
+      "final_url": "https://yegroup.cuhk.edu.cn/",
+      "text": "Welcome to the neutrino and dark matter group at the Chinese University of Hong Kong, Shenzhen.\n\n\n\nGroup photo @Jan. 10, 2025. From left to right: Jie (David), Tianyuan, Yuanyuan, Jingqiang, Huayu, Zhaowei.XENONnT solar B-8 CEvNS result was selected as one of the highlights of 2024 by APS Physics Magazine.Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam).",
+      "images": [
+        {
+          "width": "1024",
+          "height": "767",
+          "alt": "",
+          "class": "wp-block-jetpack-slideshow_image wp-image-210",
+          "data-id": "210",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=1024",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=1024 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=300 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg?w=1440 1440w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg 1706w",
+          "sizes": "(max-width: 1024px) 100vw, 1024px"
+        },
+        {
+          "width": "800",
+          "height": "400",
+          "alt": "XENONnT solar B-8 CEvNS result was selected as one of the highlights of 2024 by APS Physics Magazine.",
+          "class": "wp-block-jetpack-slideshow_image wp-image-212",
+          "data-id": "212",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png 800w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png?w=150&h=75 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png?w=300&h=150 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png?w=768&h=384 768w",
+          "sizes": "(max-width: 800px) 100vw, 800px"
+        },
+        {
+          "width": "1024",
+          "height": "767",
+          "alt": "",
+          "class": "wp-block-jetpack-slideshow_image wp-image-209",
+          "data-id": "209",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=1024",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=1024 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=300 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg?w=1440 1440w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg 1706w",
+          "sizes": "(max-width: 1024px) 100vw, 1024px"
+        }
+      ],
+      "links": [
+        {
+          "href": "",
+          "text": ""
+        },
+        {
+          "href": "",
+          "text": ""
+        },
+        {
+          "href": "",
+          "text": ""
+        }
+      ]
+    },
+    "research": {
+      "url": "https://yegroup.cuhk.edu.cn/research/",
+      "final_url": "https://yegroup.cuhk.edu.cn/research/",
+      "text": "Research\n\n\n\nXENONnT Dark Matter Experiment\n\n\n\n\n\n\n\nThe XENONnT experiment, located in Laboratori Nazionali del Gran Sasso (LNGS), Italy, is primarily designed to search for the Weakly Interacting Massive Particles (WIMPs), one of the most popular dark matter candidates. As the latest in the XENON-series experiments, XENONnT is one of the most sensitive dark matter detectors similar to its predecessors in their eras. Benefitting from its large active mass and the unprecedented low background, the XENONnT experiment has placed a stringent limit on the cross-section between dark matter and nucleons [1], as well as constraints on other new physics including axions and neutrino magnetic moment [2]. In 2022, XENONnT deciphered a mysterious excess (link), which was observed by XENON1T in 2020 and puzzled both theorists and experimentalists in the field, with only the first three month data [2]. As you are reading its description, the experiment continues to take data tirelessly and is poised to unveil more mysteries. Visit the XENONnT website for more details.Reference:[1] E. Aprile et al. (XENON Collaboration), First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment, Phys. Rev. Lett. 131, 041003 (2023).[2] E. Aprile et al. (XENON Collaboration), Excess Electronic Recoils Observed in XENON1T, Phys. Rev. D 102, 072004 (2020).[3] E. Aprile et al. (XENON Collaboration), Search for New Physics in Electronic Recoil Date from XENONnT, Phys. Rev. Lett. 129, 161805 (2022).\n\n\n\nRELICS Reactor Neutrino Experiment\n\n\n\n\n\n\n\nCoherent elastic neutrino-nucleus scattering (CEvNS) provides a unique probe for neutrino properties beyond the Standard Model (BSM) physics. REactor neutrino LIquid xenon Coherent Scattering experiment (RELICS) [1], a proposed reactor neutrino program using liquid xenon time projection chamber (LXeTPC) technology, aims to investigate the CEvNS process of antineutrinos off xenon atomic nuclei. The experiment will be located at a baseline of 25m from a reactor core with 3GW thermal power in the Sanmen nuclear reactor in Sanmen, China.\n\n\n\n\nReference:\n\n\n\n[1] C. Cai et al. (RELICS Collaboration), Reactor neutrino liquid xenon coherent elastic scattering experiment, Phys. Rev. D 110, 072011 (2024).",
+      "images": [
+        {
+          "data-attachment-id": "189",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/research/logo_standard/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png",
+          "data-orig-size": "502,700",
+          "data-comments-opened": "1",
+          "data-image-title": "logo_standard",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png?w=502",
+          "width": "502",
+          "height": "700",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png?w=502",
+          "alt": "",
+          "class": "wp-image-189",
+          "style": "width:282px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png 502w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png?w=108 108w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png?w=215 215w",
+          "sizes": "(max-width: 502px) 100vw, 502px"
+        },
+        {
+          "data-attachment-id": "191",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/research/relics_logo/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg",
+          "data-orig-size": "594,242",
+          "data-comments-opened": "1",
+          "data-image-title": "relics_logo",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg?w=594",
+          "width": "594",
+          "height": "242",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg?w=594",
+          "alt": "",
+          "class": "wp-image-191",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg 594w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg?w=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg?w=300 300w",
+          "sizes": "(max-width: 594px) 100vw, 594px"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://medium.com/starts-with-a-bang/xenons-experimental-triumph-no-dark-matter-but-the-best-null-result-in-history-464b1a30a2f",
+          "text": "link"
+        },
+        {
+          "href": "https://xenonexperiment.org/",
+          "text": "XENONnT website"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.041003",
+          "text": "Phys. Rev. Lett. 131, 041003 (2023)"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.072004",
+          "text": "Phys. Rev. D 102, 072004 (2020)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.161805",
+          "text": "Phys. Rev. Lett. 129, 161805 (2022)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2405.05554",
+          "text": "RELICS"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.072011",
+          "text": "Phys. Rev. D 110, 072011 (2024)"
+        }
+      ]
+    },
+    "people": {
+      "url": "https://yegroup.cuhk.edu.cn/people/",
+      "final_url": "https://yegroup.cuhk.edu.cn/people/",
+      "text": "People\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProf. Jingqiang Ye (叶靖强)\n\n\n\nPrincipal Investigator\n\n\n\nEmail: yejingqiang@cuhk.edu.cn\n\n\n\nOffice: Rx613\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Jiafu Li (李家富)\n\n\n\nPostdoc\n\n\n\nEmail: lijiafu@cuhk.edu.cn\n\n\n\nOffice: Rx618\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHuayu Dai (戴华煜)\n\n\n\nPhD Student\n\n\n\nEmail: huayudai@link.cuhk.edu.cn\n\n\n\nOffice: Rx618\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHongkun Li (李宏坤)\n\n\n\nPhD Student\n\n\n\nEmail: hongkunli@link.cuhk.edu.cn\n\n\n\nOffice: Rx618\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHaoyun Liu (刘皓昀)\n\n\n\nPhD Student\n\n\n\nEmail: haoyunliu@link.cuhk.edu.cn\n\n\n\nOffice: Rx618\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYuanyuan Ren (任媛媛)\n\n\n\nBSc Student\n\n\n\nEmail: yuanyuanren@link.cuhk.edu.cn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTianyuan Zha (查天源)\n\n\n\nBSc Student\n\n\n\nEmail: tianyuanzha@link.cuhk.edu.cn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nZixi Chen (陈子曦)\n\n\n\nBSc Student\n\n\n\nEmail: zixichen@link.cuhk.edu.cn\n\n\n\nOffice: Rx618\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nXiaoling Cheng (程小玲)\n\n\n\nExecutive Assistant\n\n\n\nEmail: chengxiaoling@cuhk.edu.cn\n\n\n\nOffice: TC401b",
+      "images": [
+        {
+          "data-attachment-id": "139",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/jingqiang2/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg",
+          "data-orig-size": "683,668",
+          "data-comments-opened": "1",
+          "data-image-title": "jingqiang2",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg?w=683",
+          "width": "683",
+          "height": "668",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg",
+          "alt": "",
+          "class": "wp-image-139",
+          "style": "aspect-ratio:1;object-fit:cover;width:411px;height:auto",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg 683w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg?w=150&h=147 150w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg?w=300&h=293 300w",
+          "sizes": "(max-width: 683px) 100vw, 683px"
+        },
+        {
+          "data-attachment-id": "264",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/jiafuli/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png",
+          "data-orig-size": "1075,1382",
+          "data-comments-opened": "1",
+          "data-image-title": "jiafuli",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=797",
+          "width": "1075",
+          "height": "1382",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png",
+          "alt": "",
+          "class": "wp-image-264",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png 1075w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=117&h=150 117w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=233&h=300 233w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=768&h=987 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=797&h=1024 797w",
+          "sizes": "(max-width: 1075px) 100vw, 1075px"
+        },
+        {
+          "data-attachment-id": "167",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tempimagetm8w31/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg",
+          "data-orig-size": "3024,4032",
+          "data-comments-opened": "1",
+          "data-image-title": "tempImageTM8W31",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=768",
+          "width": "3024",
+          "height": "4032",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg",
+          "alt": "",
+          "class": "wp-image-167",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg 3024w, https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=113&h=150 113w, https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=225&h=300 225w, https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=768&h=1024 768w, https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=1440&h=1920 1440w",
+          "sizes": "(max-width: 3024px) 100vw, 3024px"
+        },
+        {
+          "data-attachment-id": "136",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tempimageu02rr4/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg",
+          "data-orig-size": "851,1024",
+          "data-comments-opened": "1",
+          "data-image-title": "tempImageu02Rr4",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=851",
+          "loading": "lazy",
+          "width": "851",
+          "height": "1024",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg",
+          "alt": "",
+          "class": "wp-image-136",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg 851w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=125&h=150 125w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=249&h=300 249w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=768&h=924 768w",
+          "sizes": "auto, (max-width: 851px) 100vw, 851px"
+        },
+        {
+          "data-attachment-id": "310",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/haoyun/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg",
+          "data-orig-size": "2316,2316",
+          "data-comments-opened": "1",
+          "data-image-meta": "{\"caption\":\"{\\\"ARInfo\\\":{\\\"IsUseAR\\\":false},\\\"Version\\\":\\\"1.0.0\\\",\\\"MakeupInfo\\\":{\\\"IsUseMakeup\\\":false},\\\"FaceliftInfo\\\":{\\\"IsChangeEyeLift\\\":false,\\\"IsChangeFacelift\\\":false,\\\"IsChangePostureLift\\\":false,\\\"IsChangeNose\\\":false,\\\"IsChangeFaceChin\\\":false,\\\"IsChangeMouth\\\":false,\\\"IsChangeThinFace\\\":false},\\\"BeautyInfo\\\":{\\\"IsAIBeauty\\\":false,\\\"OldBeautyCount\\\":1,\\\"IsSharpen\\\":false,\\\"SwitchMedicatedAcne\\\":false,\\\"IsBrightEyes\\\":false,\\\"IsOldBeauty\\\":true,\\\"IsReduceBlackEyes\\\":false},\\\"HandlerInfo\\\":{\\\"AppName\\\":2},\\\"FilterInfo\\\":{\\\"IsUseFilter\\\":false}}\",\"created_timestamp\":\"1667565381\",\"orientation\":\"1\"}",
+          "data-image-title": "haoyun",
+          "data-image-description": "",
+          "data-image-caption": "<p>{&#8220;ARInfo&#8221;:{&#8220;IsUseAR&#8221;:false},&#8221;Version&#8221;:&#8221;1.0.0&#8243;,&#8221;MakeupInfo&#8221;:{&#8220;IsUseMakeup&#8221;:false},&#8221;FaceliftInfo&#8221;:{&#8220;IsChangeEyeLift&#8221;:false,&#8221;IsChangeFacelift&#8221;:false,&#8221;IsChangePostureLift&#8221;:false,&#8221;IsChangeNose&#8221;:false,&#8221;IsChangeFaceChin&#8221;:false,&#8221;IsChangeMouth&#8221;:false,&#8221;IsChangeThinFace&#8221;:false},&#8221;BeautyInfo&#8221;:{&#8220;IsAIBeauty&#8221;:false,&#8221;OldBeautyCount&#8221;:1,&#8221;IsSharpen&#8221;:false,&#8221;SwitchMedicatedAcne&#8221;:false,&#8221;IsBrightEyes&#8221;:false,&#8221;IsOldBeauty&#8221;:true,&#8221;IsReduceBlackEyes&#8221;:false},&#8221;HandlerInfo&#8221;:{&#8220;AppName&#8221;:2},&#8221;FilterInfo&#8221;:{&#8220;IsUseFilter&#8221;:false}}</p>\n",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1024",
+          "loading": "lazy",
+          "width": "2316",
+          "height": "2316",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg",
+          "alt": "",
+          "class": "wp-image-310",
+          "style": "aspect-ratio:1;object-fit:cover;width:411px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg 2316w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=150&h=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=300&h=300 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=768&h=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1024&h=1024 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1440&h=1440 1440w",
+          "sizes": "auto, (max-width: 2316px) 100vw, 2316px"
+        },
+        {
+          "data-attachment-id": "50",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/renyuanyuan/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg",
+          "data-orig-size": "998,1121",
+          "data-comments-opened": "1",
+          "data-image-title": "renyuanyuan",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=912",
+          "loading": "lazy",
+          "width": "998",
+          "height": "1121",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg",
+          "alt": "",
+          "class": "wp-image-50",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg 998w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=134&h=150 134w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=267&h=300 267w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=768&h=863 768w",
+          "sizes": "auto, (max-width: 998px) 100vw, 998px"
+        },
+        {
+          "data-attachment-id": "51",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tianyuanzha/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg",
+          "data-orig-size": "960,1279",
+          "data-comments-opened": "1",
+          "data-image-title": "tianyuanzha",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg?w=769",
+          "loading": "lazy",
+          "width": "960",
+          "height": "1279",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg",
+          "alt": "",
+          "class": "wp-image-51",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg 960w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg?w=113&h=150 113w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg?w=225&h=300 225w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg?w=768&h=1023 768w",
+          "sizes": "auto, (max-width: 960px) 100vw, 960px"
+        },
+        {
+          "data-attachment-id": "226",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/zixichen/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg",
+          "data-orig-size": "1860,1672",
+          "data-comments-opened": "1",
+          "data-image-meta": "{\"aperture\":\"1.8\",\"created_timestamp\":\"1747155983\",\"focal_length\":\"6.14\",\"shutter_speed\":\"0.01\",\"orientation\":\"1\"}",
+          "data-image-title": "zixichen",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1024",
+          "loading": "lazy",
+          "width": "1860",
+          "height": "1672",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg",
+          "alt": "",
+          "class": "wp-image-226",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg 1860w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=150&h=135 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=300&h=270 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=768&h=690 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1024&h=920 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1440&h=1294 1440w",
+          "sizes": "auto, (max-width: 1860px) 100vw, 1860px"
+        },
+        {
+          "data-attachment-id": "234",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/xiaolingcheng1/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg",
+          "data-orig-size": "1280,1280",
+          "data-comments-opened": "1",
+          "data-image-title": "xiaolingcheng1",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg?w=1024",
+          "loading": "lazy",
+          "width": "1280",
+          "height": "1280",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg",
+          "alt": "",
+          "class": "wp-image-234",
+          "style": "aspect-ratio:1;object-fit:cover",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg 1280w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg?w=150&h=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg?w=300&h=300 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg?w=768&h=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg?w=1024&h=1024 1024w",
+          "sizes": "auto, (max-width: 1280px) 100vw, 1280px"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://yegroup.cuhk.edu.cn/jingqiang-ye/",
+          "text": "Prof. Jingqiang Ye (叶靖强)"
+        },
+        {
+          "href": "mailto:yejingqiang@cuhk.edu.cn",
+          "text": "yejingqiang@cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/jiafu-li/",
+          "text": "Dr. Jiafu Li (李家富)"
+        },
+        {
+          "href": "mailto:lijiafu@cuhk.edu.cn",
+          "text": "lijiafu@cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/huayu-dai/",
+          "text": "Huayu Dai (戴华煜)"
+        },
+        {
+          "href": "mailto:huayudai@link.cuhk.edu.cn",
+          "text": "huayudai@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/hongkun-li/",
+          "text": "Hongkun Li (李宏坤)"
+        },
+        {
+          "href": "mailto:hongkunli@link.cuhk.edu.cn",
+          "text": "hongkunli@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/haoyun-liu/",
+          "text": "Haoyun Liu (刘皓昀)"
+        },
+        {
+          "href": "mailto:haoyunliu@link.cuhk.edu.cn",
+          "text": "haoyunliu@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/yuanyuan-ren/",
+          "text": "Yuanyuan Ren (任媛媛)"
+        },
+        {
+          "href": "mailto:yuanyuanren@link.cuhk.edu.cn",
+          "text": "yuanyuanren@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/tianyuan-zha/",
+          "text": "Tianyuan Zha (查天源)"
+        },
+        {
+          "href": "mailto:tianyuanzha@link.cuhk.edu.cn",
+          "text": "tianyuanzha@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/zixi-chen/",
+          "text": "Zixi Chen (陈子曦)"
+        },
+        {
+          "href": "mailto:zixichen@link.cuhk.edu.cn",
+          "text": "zixichen@link.cuhk.edu.cn"
+        },
+        {
+          "href": "https://yegroup.cuhk.edu.cn/xiaoling-cheng/",
+          "text": "Xiaoling Cheng (程小玲)"
+        },
+        {
+          "href": "mailto:chengxiaoling@cuhk.edu.cn",
+          "text": "chengxiaoling@cuhk.edu.cn"
+        }
+      ]
+    },
+    "alumni": {
+      "url": "https://yegroup.cuhk.edu.cn/?page_id=109",
+      "final_url": "https://yegroup.cuhk.edu.cn/alumni/",
+      "text": "Alumni\n\n\n\nJie Tang (Bsc student, 2024-2026): now master student at Nagoya University.\n\n\n\nYuechen Li (Bsc student, 2025-2026): now exchange student at University of Oxford.\n\n\n\nZhaowei Song (RA, 2024-2026): now PhD student at Westlake University.\n\n\n\nZhangjian Liang (RA, 2024): now graduate student at CityU-Dongguan.\n\n\n\nHaowen Si (Bsc student, 2024): now graduate student at Amsterdam University.\n\n\n\nTingyi He (summer student, 2024): now graduate student at Amsterdam University.\n\n\n\nLinzheng Tan (Bsc student, 2024): now undergraduate student at CUHK-Shenzhen.",
+      "images": [],
+      "links": []
+    },
+    "publication": {
+      "url": "https://yegroup.cuhk.edu.cn/publication/",
+      "final_url": "https://yegroup.cuhk.edu.cn/publication/",
+      "text": "Publications\n\n\n\nSelected publications with substantial contribution from our group:\n\n\n\n\nE. Aprile et al. (XENON Collaboration), Challenging spontaneous quantum collapse with the XENONnT dark matter detector, Phys. Rev. Lett. 136, 120201 (2026).\n\n\n\nE. Aprile et al. (XENON Collaboration), Search for Light Dark Matter in Low-Energy Ionization Signals from XENONnT, Phys. Rev. Lett. 134, 161004 (2025).\n\n\n\nE. Aprile et al. (XENON Collaboration), First Measurement of Solar 8B Neutrinos via Coherent Elastic Neutrino-Nucleus Scattering with XENONnT, Phys. Rev. Lett. 133, 191002 (2024).\n\n\n\nC. Cai et al. (RELICS Collaboration), REactor neutrino LIquid xenon Coherent elastic Scattering experiment, Phys. Rev. D 110, 072011 (2024).\n\n\n\nE. Aprile et al. (XENON Collaboration), First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment, Phys. Rev. Lett. 131, 041003 (2023).\n\n\n\nE. Aprile et al. (XENON Collaboration), Detector signal characterization with a Bayesian network in XENONnT, Phys. Rev. D 108, 012016 (2023).\n\n\n\nE. Aprile et al. (XENON Collaboration), Search for New Physics in Electronic Recoils from XENONnT, Phys. Rev. Lett. 129, 161805 (2022).\n\n\n\nR. Leane et al., Snowmass2021 Cosmic Frontier White Paper: Puzzling Excesses in Dark Matter Searches and How to Resolve Them, arXiv:2203.06859 (2022).\n\n\n\nY. Wei, J. Long, F. Lombardi, Z. Jiang, J. Ye and K. Ni, Development and performance of a sealed liquid xenon time projection chamber, JINST 16 P01018 (2021).\n\n\n\nE. Aprile et al. (XENON Collaboration), Excess Electronic Recoil Events in XENON1T, Phys. Rev. D. 102, 072004 (2020).\n\n\n\nE. Aprile et al. (XENON Collaboration), XENON1T Dark Matter Data Analysis: Signal Reconstruction, Calibration and Event Selection, Phys. Rev. D 100, 052014 (2019).\n\n\n\nE. Aprile et al. (XENON Collaboration), Observation of Two-neutrino Double Electron Capture in 124Xe with XENON1T, Nature 568, 532-535 (2019).\n\n\n\nE. Aprile et al. (XENON Collaboration), Dark matter search results from a one ton-year exposure of XENON1T, Phys. Rev. Lett. 121, 111302 (2018).\n\n\n\nE. Aprile et al. (XENON Collaboration), Signal yields of keV electronic recoils and their discrimination from nuclear recoils in liquid xenon, Phys. Rev. D 97, 092007 (2018).\n\n\n\nE. Aprile et al. (XENON Collaboration), First Dark Matter Search Results from the XENON1T Experiment, Phys. Rev. Lett. 119, 181301 (2017).",
+      "images": [],
+      "links": [
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/2jm3-4976",
+          "text": "Phys. Rev. Lett. 136, 120201 (2026)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.161004",
+          "text": "Phys. Rev. Lett. 134, 161004 (2025)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.191002",
+          "text": "Phys. Rev. Lett. 133, 191002 (2024)"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.072011",
+          "text": "Phys. Rev. D 110, 072011 (2024)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.041003",
+          "text": "Phys. Rev. Lett. 131, 041003 (2023)"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.012016",
+          "text": "Phys. Rev. D 108, 012016 (2023)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.161805",
+          "text": "Phys. Rev. Lett. 129, 161805 (2022)"
+        },
+        {
+          "href": "https://arxiv.org/abs/2203.06859",
+          "text": "arXiv:2203.06859 (2022)"
+        },
+        {
+          "href": "https://iopscience.iop.org/article/10.1088/1748-0221/16/01/P01018",
+          "text": "JINST 16 P01018 (2021)"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.072004",
+          "text": "Phys. Rev. D. 102, 072004 (2020)"
+        },
+        {
+          "href": "https://dx.doi.org/10.1103/PhysRevD.100.052014",
+          "text": "Phys. Rev. D 100, 052014 (2019)"
+        },
+        {
+          "href": "https://www.nature.com/articles/s41586-019-1124-4",
+          "text": "Nature 568, 532-535 (2019)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.111302",
+          "text": "Phys. Rev. Lett. 121, 111302 (2018)"
+        },
+        {
+          "href": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092007",
+          "text": "Phys. Rev. D 97, 092007 (2018)"
+        },
+        {
+          "href": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.119.181301",
+          "text": "Phys. Rev. Lett. 119, 181301 (2017)"
+        }
+      ]
+    },
+    "opening": {
+      "url": "https://yegroup.cuhk.edu.cn/opening/",
+      "final_url": "https://yegroup.cuhk.edu.cn/opening/",
+      "text": "Opening\n\n\n\nWe have open positions for Ph.D. students and Postdocs.\n\n\n\nUnfortunately, we don’t have open positions for undergraduate students at the moment. We recommend checking back in the future or exploring other labs within the school.\n\n\n\nPhD\n\n\n\nPlease email the following items to Prof. Jingqiang Ye (yejingqiang@cuhk.edu.cn) with a prefix of [CUHK-SZ PhD Application] in the title.\n\n\n\n\nTranscript\n\n\n\nCV\n\n\n\nResearch Statement (if any)\n\n\n\n\nYou can also find useful information on the university website: https://sse-mphil-phd.cuhk.edu.cn/en/program/PHY. \n\n\n\nPostdoc\n\n\n\nPlease email the following items to Prof. Jingqiang Ye (yejingqiang@cuhk.edu.cn) with a prefix of [CUHK-SZ Postdoc Application] in the title.\n\n\n\n\nCV (with publication list)\n\n\n\nResearch Statement\n\n\n\n\nIf you plan to formally apply for this position, please also include the following items.\n\n\n\n\nCover letter\n\n\n\n2 Recommendation Letters\n\n\n\n\nIf you have any questions, don’t hesitate to get in touch with us.Contact: Prof. Jingqiang Ye, yejingqiang@cuhk.edu.cn.",
+      "images": [],
+      "links": [
+        {
+          "href": "https://sse-mphil-phd.cuhk.edu.cn/en/program/PHY",
+          "text": "https://sse-mphil-phd.cuhk.edu.cn/en/program/PHY"
+        },
+        {
+          "href": "mailto:yejingqiang@cuhk.edu.cn",
+          "text": "yejingqiang@cuhk.edu.cn"
+        }
+      ]
+    },
+    "contact": {
+      "url": "https://yegroup.cuhk.edu.cn/contact/",
+      "final_url": "https://yegroup.cuhk.edu.cn/contact/",
+      "text": "Address:\n\n\n\nSchool of Science and Engineering, \n\n\n\nThe Chinese University of Hong Kong, Shenzhen\n\n\n\nNo. 2001 Longxiang Blvd., \n\n\n\nLonggang Dist., \n\n\n\nShenzhen 518172, China\n\n\n\nTelephone:\n\n\n\n+86 0755-23519735\n\n\n\nEmail:\n\n\n\nyejingqiang@cuhk.edu.cn",
+      "images": [],
+      "links": [
+        {
+          "href": "mailto:yejingqiang@cuhk.edu.cn",
+          "text": "yejingqiang@cuhk.edu.cn"
+        }
+      ]
+    },
+    "jingqiang-ye": {
+      "url": "https://yegroup.cuhk.edu.cn/jingqiang-ye/",
+      "final_url": "https://yegroup.cuhk.edu.cn/jingqiang-ye/",
+      "text": "Jingqiang Ye (叶靖强)\n\n\n\n\n\n\n\nEducation\n\n\n\n\nUniversity of California, San Diego, PhD in physics (2020)\n\n\n\nZhejiang University, BS (2014)\n\n\n\n\nAppointment\n\n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Assistant professor, 2024 – present\n\n\n\nColumbia University, Postdoctoral research scientist, 2020 – 2023\n\n\n\n\nProf. Ye is an experimental particle physicist. His main research interests include the direct detection of dark matter, neutrinos, and axions using noble liquid detectors and the development of technologies for next-generation detectors. His group is involved with the XENONnT dark matter experiment and RELICS reactor neutrino experiment, and he served as Analysis Coordinator for the XENONnT experiment from 2022 to 2023. Check out the full CV.\n\n\n\nHe is also a runner, cat parent, and coffee lover.",
+      "images": [
+        {
+          "data-attachment-id": "11",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/yejingqiang1/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/yejingqiang1.jpg",
+          "data-orig-size": "1280,1707",
+          "data-comments-opened": "1",
+          "data-image-title": "yejingqiang1",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/yejingqiang1.jpg?w=768",
+          "width": "768",
+          "height": "1024",
+          "src": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg?w=768",
+          "alt": "",
+          "class": "wp-image-11",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg?w=768 768w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg?w=112 112w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg?w=225 225w, https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg 1280w",
+          "sizes": "(max-width: 768px) 100vw, 768px"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://xenonexperiment.org/",
+          "text": "XENONnT dark matter experiment"
+        },
+        {
+          "href": "https://arxiv.org/abs/2405.05554",
+          "text": "RELICS reactor neutrino experiment"
+        },
+        {
+          "href": "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/cv.pdf",
+          "text": "CV"
+        }
+      ]
+    },
+    "jiafu-li": {
+      "url": "https://yegroup.cuhk.edu.cn/jiafu-li/",
+      "final_url": "https://yegroup.cuhk.edu.cn/jiafu-li/",
+      "text": "Jiafu Li (李家富)\n\n\n\nEducation: Sun Yat-sen University, PhD in physics (2025)\n\n\n\nI am conducting research in the field of liquid xenon experiments, with a focus on neutrinos and dark matter. My work encompasses data and physics analysis, detector technology development, and the advancement of trace measurement systems. Our goal is to improve the detection sensitivity for both neutrino and dark matter, ultimately aiming to better understand the properties of neutrinos and make groundbreaking discoveries in dark matter. We invite undergraduate and PhD students to join us, collaborate, and engage in insightful discussions.",
+      "images": [
+        {
+          "data-attachment-id": "264",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/jiafuli/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png",
+          "data-orig-size": "1075,1382",
+          "data-comments-opened": "1",
+          "data-image-title": "jiafuli",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=797",
+          "width": "797",
+          "height": "1024",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=797",
+          "alt": "",
+          "class": "wp-image-264",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=797 797w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=117 117w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=233 233w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png?w=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png 1075w",
+          "sizes": "(max-width: 797px) 100vw, 797px"
+        }
+      ],
+      "links": []
+    },
+    "huayu-dai": {
+      "url": "https://yegroup.cuhk.edu.cn/huayu-dai/",
+      "final_url": "https://yegroup.cuhk.edu.cn/huayu-dai/",
+      "text": "Huayu Dai (戴华煜)\n\n\n\nEducation: \n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Doctor in Physics (2025 – present)\n\n\n\nSun Yat-sen University, Master in Physics (2023)",
+      "images": [
+        {
+          "data-attachment-id": "167",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tempimagetm8w31/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg",
+          "data-orig-size": "3024,4032",
+          "data-comments-opened": "1",
+          "data-image-title": "tempImageTM8W31",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=768",
+          "width": "768",
+          "height": "1024",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=768",
+          "alt": "",
+          "class": "wp-image-167",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=1536 1536w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=113 113w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=225 225w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg?w=1440 1440w",
+          "sizes": "(max-width: 768px) 100vw, 768px"
+        }
+      ],
+      "links": []
+    },
+    "hongkun-li": {
+      "url": "https://yegroup.cuhk.edu.cn/hongkun-li/",
+      "final_url": "https://yegroup.cuhk.edu.cn/hongkun-li/",
+      "text": "Hongkun Li (李宏坤)\n\n\n\nEducation: \n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Doctor in Physics (2025 – present)\n\n\n\nSichuan University, Bachelor in Physics (2025)",
+      "images": [
+        {
+          "data-attachment-id": "136",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tempimageu02rr4/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg",
+          "data-orig-size": "851,1024",
+          "data-comments-opened": "1",
+          "data-image-title": "tempImageu02Rr4",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=851",
+          "width": "851",
+          "height": "1024",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg",
+          "alt": "",
+          "class": "wp-image-136",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg 851w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=125&h=150 125w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=249&h=300 249w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg?w=768&h=924 768w",
+          "sizes": "(max-width: 851px) 100vw, 851px"
+        }
+      ],
+      "links": []
+    },
+    "haoyun-liu": {
+      "url": "https://yegroup.cuhk.edu.cn/haoyun-liu/",
+      "final_url": "https://yegroup.cuhk.edu.cn/haoyun-liu/",
+      "text": "Haoyun Liu (刘皓昀)\n\n\n\n\n\n\n\nEducation\n\n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Doctor in Physics (2026 – present)\n\n\n\nImperial College London, MSci in Physics with Theoretical Physics (2026)\n\n\n\n\n\n\n\n\nHaoyun Liu is a PhD student in the group. Before joining the group, he completed his undergraduate degree in Physics with Theoretical Physics at Imperial College London. His research interests include integrating modern machine learning methods with particle physics. Outside of research, he enjoys running, cycling, and photography.",
+      "images": [
+        {
+          "data-attachment-id": "310",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/haoyun/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg",
+          "data-orig-size": "2316,2316",
+          "data-comments-opened": "1",
+          "data-image-meta": "{\"caption\":\"{\\\"ARInfo\\\":{\\\"IsUseAR\\\":false},\\\"Version\\\":\\\"1.0.0\\\",\\\"MakeupInfo\\\":{\\\"IsUseMakeup\\\":false},\\\"FaceliftInfo\\\":{\\\"IsChangeEyeLift\\\":false,\\\"IsChangeFacelift\\\":false,\\\"IsChangePostureLift\\\":false,\\\"IsChangeNose\\\":false,\\\"IsChangeFaceChin\\\":false,\\\"IsChangeMouth\\\":false,\\\"IsChangeThinFace\\\":false},\\\"BeautyInfo\\\":{\\\"IsAIBeauty\\\":false,\\\"OldBeautyCount\\\":1,\\\"IsSharpen\\\":false,\\\"SwitchMedicatedAcne\\\":false,\\\"IsBrightEyes\\\":false,\\\"IsOldBeauty\\\":true,\\\"IsReduceBlackEyes\\\":false},\\\"HandlerInfo\\\":{\\\"AppName\\\":2},\\\"FilterInfo\\\":{\\\"IsUseFilter\\\":false}}\",\"created_timestamp\":\"1667565381\",\"orientation\":\"1\"}",
+          "data-image-title": "haoyun",
+          "data-image-description": "",
+          "data-image-caption": "<p>{&#8220;ARInfo&#8221;:{&#8220;IsUseAR&#8221;:false},&#8221;Version&#8221;:&#8221;1.0.0&#8243;,&#8221;MakeupInfo&#8221;:{&#8220;IsUseMakeup&#8221;:false},&#8221;FaceliftInfo&#8221;:{&#8220;IsChangeEyeLift&#8221;:false,&#8221;IsChangeFacelift&#8221;:false,&#8221;IsChangePostureLift&#8221;:false,&#8221;IsChangeNose&#8221;:false,&#8221;IsChangeFaceChin&#8221;:false,&#8221;IsChangeMouth&#8221;:false,&#8221;IsChangeThinFace&#8221;:false},&#8221;BeautyInfo&#8221;:{&#8220;IsAIBeauty&#8221;:false,&#8221;OldBeautyCount&#8221;:1,&#8221;IsSharpen&#8221;:false,&#8221;SwitchMedicatedAcne&#8221;:false,&#8221;IsBrightEyes&#8221;:false,&#8221;IsOldBeauty&#8221;:true,&#8221;IsReduceBlackEyes&#8221;:false},&#8221;HandlerInfo&#8221;:{&#8220;AppName&#8221;:2},&#8221;FilterInfo&#8221;:{&#8220;IsUseFilter&#8221;:false}}</p>\n",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1024",
+          "width": "1024",
+          "height": "1024",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1024",
+          "alt": "",
+          "class": "wp-image-310",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1024 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=2048 2048w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=150 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=300 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=768 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg?w=1440 1440w",
+          "sizes": "(max-width: 1024px) 100vw, 1024px"
+        }
+      ],
+      "links": []
+    },
+    "yuanyuan-ren": {
+      "url": "https://yegroup.cuhk.edu.cn/yuanyuan-ren/",
+      "final_url": "https://yegroup.cuhk.edu.cn/yuanyuan-ren/",
+      "text": "Yuanyuan Ren (任媛媛)\n\n\n\nEducation: \n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Bachelor in Physics (2023 – present)",
+      "images": [
+        {
+          "data-attachment-id": "50",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/renyuanyuan/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg",
+          "data-orig-size": "998,1121",
+          "data-comments-opened": "1",
+          "data-image-title": "renyuanyuan",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=912",
+          "width": "998",
+          "height": "1121",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg",
+          "alt": "",
+          "class": "wp-image-50",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg 998w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=134&h=150 134w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=267&h=300 267w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg?w=768&h=863 768w",
+          "sizes": "(max-width: 998px) 100vw, 998px"
+        }
+      ],
+      "links": []
+    },
+    "tianyuan-zha": {
+      "url": "https://yegroup.cuhk.edu.cn/tianyuan-zha/",
+      "final_url": "https://yegroup.cuhk.edu.cn/tianyuan-zha/",
+      "text": "Tianyuan Zha (查天源)\n\n\n\nEducation: \n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Bachelor in Physics (2023 – present)",
+      "images": [
+        {
+          "data-attachment-id": "51",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/tianyuanzha/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg",
+          "data-orig-size": "960,1279",
+          "data-comments-opened": "1",
+          "data-image-title": "tianyuanzha",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg?w=769",
+          "width": "960",
+          "height": "1279",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg",
+          "alt": "",
+          "class": "wp-image-51",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg 960w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg?w=113&h=150 113w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg?w=225&h=300 225w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg?w=768&h=1023 768w",
+          "sizes": "(max-width: 960px) 100vw, 960px"
+        }
+      ],
+      "links": []
+    },
+    "zixi-chen": {
+      "url": "https://yegroup.cuhk.edu.cn/zixi-chen/",
+      "final_url": "https://yegroup.cuhk.edu.cn/zixi-chen/",
+      "text": "Zixi Chen (陈子曦)\n\n\n\nEducation: \n\n\n\nThe Chinese University of Hong Kong, Shenzhen, Bachelor in Physics (2023 – present)",
+      "images": [
+        {
+          "data-attachment-id": "226",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/people/zixichen/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg",
+          "data-orig-size": "1860,1672",
+          "data-comments-opened": "1",
+          "data-image-meta": "{\"aperture\":\"1.8\",\"created_timestamp\":\"1747155983\",\"focal_length\":\"6.14\",\"shutter_speed\":\"0.01\",\"orientation\":\"1\"}",
+          "data-image-title": "zixichen",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1024",
+          "width": "1860",
+          "height": "1672",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg",
+          "alt": "",
+          "class": "wp-image-226",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg 1860w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=150&h=135 150w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=300&h=270 300w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=768&h=690 768w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1024&h=920 1024w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg?w=1440&h=1294 1440w",
+          "sizes": "(max-width: 1860px) 100vw, 1860px"
+        }
+      ],
+      "links": []
+    },
+    "xiaoling-cheng": {
+      "url": "https://yegroup.cuhk.edu.cn/xiaoling-cheng/",
+      "final_url": "https://yegroup.cuhk.edu.cn/xiaoling-cheng/",
+      "text": "Xiaoling Cheng (程小玲)\n\n\n\nEducation:",
+      "images": [
+        {
+          "data-attachment-id": "232",
+          "data-permalink": "https://yegroup.cuhk.edu.cn/xiaolingcheng-3/",
+          "data-orig-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg",
+          "data-orig-size": "1076,1436",
+          "data-comments-opened": "1",
+          "data-image-title": "xiaolingcheng",
+          "data-image-description": "",
+          "data-image-caption": "",
+          "data-large-file": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg?w=767",
+          "width": "767",
+          "height": "1023",
+          "src": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg?w=767",
+          "alt": "",
+          "class": "wp-image-232",
+          "style": "width:400px;height:auto",
+          "srcset": "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg?w=767 767w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg?w=112 112w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg?w=225 225w, https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg 1076w",
+          "sizes": "(max-width: 767px) 100vw, 767px"
+        }
+      ],
+      "links": []
+    }
+  },
+  "assets": {
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20250110-1.jpg": "assets/images/groupphoto_20250110-1.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/e181_1.png": "assets/images/e181_1.png",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/01/groupphoto_20240711.jpg": "assets/images/groupphoto_20240711.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/logo_standard.png": "assets/images/logo_standard.png",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/relics_logo.jpg": "assets/images/relics_logo.jpg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/jingqiang2-689642022-e1732801026118.jpg": "assets/images/jingqiang2-689642022-e1732801026118.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/09/jiafuli.png": "assets/images/jiafuli.png",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/12/tempimagetm8w31.jpg": "assets/images/tempimagetm8w31.jpg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tempimageu02rr4.jpg": "assets/images/tempimageu02rr4.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2026/09/haoyun.jpeg": "assets/images/haoyun.jpeg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg": "assets/images/renyuanyuan-346225708-e1732800139141.jpeg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/tianyuanzha.jpg": "assets/images/tianyuanzha.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/zixichen-e1747299946193.jpg": "assets/images/zixichen-e1747299946193.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng1.jpg": "assets/images/xiaolingcheng1.jpg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/yejingqiang1.jpg": "assets/images/yejingqiang1.jpg",
+    "https://yegroup-cuhksz.org/wp-content/uploads/2024/11/cv.pdf": "assets/images/cv.pdf",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/12/tempimagetm8w31.jpg": "assets/images/tempimagetm8w31.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tempimageu02rr4.jpg": "assets/images/tempimageu02rr4.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/renyuanyuan-346225708-e1732800139141.jpeg": "assets/images/renyuanyuan-346225708-e1732800139141.jpeg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2024/11/tianyuanzha.jpg": "assets/images/tianyuanzha.jpg",
+    "https://yegroup.cuhk.edu.cn/wp-content/uploads/2025/05/xiaolingcheng-2.jpg": "assets/images/xiaolingcheng-2.jpg"
+  }
+}

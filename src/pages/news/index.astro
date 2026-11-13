@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewsList from '../../components/NewsList.astro';
+import { albums, assertNewsReferences, news, publications, publishedNews } from '../../lib/content';
+
+const members = await getCollection('members');
+assertNewsReferences(news, {
+  memberSlugs: members.map((member) => member.data.slug),
+  publicationIds: publications.map((item) => item.id),
+  albumSlugs: albums.map((album) => album.slug),
+});
+---
+
+<BaseLayout
+  title="News"
+  description="News and announcements from the Neutrino & Dark Matter Group at CUHK-Shenzhen."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">News</p>
+    <h1>News and announcements.</h1>
+    <p class="lead">Group updates and announcements, newest first.</p>
+  </div>
+
+  <div class="container news-archive">
+    {
+      publishedNews.length === 0 ? (
+        <div class="empty-state">
+          <h2>No news yet</h2>
+          <p>
+            Group updates and announcements will appear here when available. Publications,
+            research projects and group profiles remain accessible through the main navigation.
+          </p>
+        </div>
+      ) : (
+        <>
+          <h2 class="visually-hidden">All news announcements</h2>
+          <NewsList items={publishedNews} />
+        </>
+      )
+    }
+  </div>
+</BaseLayout>

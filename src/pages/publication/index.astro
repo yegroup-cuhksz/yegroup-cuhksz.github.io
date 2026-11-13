@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PublicationList from '../../components/PublicationList.astro';
+import { publications } from '../../lib/content';
+---
+
+<BaseLayout
+  title="Publications"
+  description="Publications with substantial contributions from the Neutrino & Dark Matter Group at CUHK-Shenzhen, including XENONnT and RELICS results."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Publications</p>
+    <h1>Research in print.</h1>
+    <p class="lead">
+      The complete list contains {publications.length} publications with substantial contributions
+      from our group, ordered by publication year from newest to oldest. Representative papers
+      selected for the homepage are highlighted.
+    </p>
+  </div>
+
+  <div class="container publications-section">
+    <h2 class="visually-hidden">All publications</h2>
+    <PublicationList items={publications} controls />
+  </div>
+</BaseLayout>

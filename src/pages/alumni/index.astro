@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { alumni } from '../../lib/content';
+---
+
+<BaseLayout
+  title="Alumni"
+  description="Former students and research assistants of the Neutrino & Dark Matter Group at CUHK-Shenzhen, with their roles, periods in the group and subsequent destinations."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">People / Alumni</p>
+    <h1>Alumni</h1>
+    <p class="lead">
+      {alumni.length} former members are recorded here, together with their former roles, periods
+      in the group and subsequent destinations where known.
+    </p>
+    <a class="text-link" href="/people/">Back to current members <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="container">
+    {
+      alumni.length === 0 ? (
+        <div class="empty-state">
+          <h2>No alumni records yet</h2>
+          <p>Former members will be listed here when records become available.</p>
+        </div>
+      ) : (
+        <ol class="alumni-list">
+          {alumni.map((person) => (
+            <li class="alumni-row">
+              <h2>{person.name}</h2>
+              <p class="alumni-role">{person.period ? `${person.role} · ${person.period}` : person.role}</p>
+              {person.destination && <p>{person.destination}</p>}
+            </li>
+          ))}
+        </ol>
+      )
+    }
+  </div>
+</BaseLayout>

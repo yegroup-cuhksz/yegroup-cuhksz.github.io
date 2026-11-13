@@ -1,0 +1,84 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocalImage from '../../components/LocalImage.astro';
+
+const entries = (await getCollection('research')).sort(
+  (a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title),
+);
+const rendered = await Promise.all(
+  entries.map(async (entry) => ({
+    entry,
+    Content: (await render(entry)).Content,
+  })),
+);
+---
+
+<BaseLayout
+  title="Research"
+  description="Research on dark matter, neutrinos and rare-event physics with liquid xenon detectors, including the XENONnT and RELICS experiments."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Research</p>
+    <h1>Experiments built to answer fundamental questions.</h1>
+    <p class="lead">
+      The group works on the physics, analysis and detector technology behind large
+      low-background experiments. Each project below sets out its scientific context, goals and
+      references.
+    </p>
+    <nav class="anchor-links" aria-label="Research projects">
+      {rendered.map(({ entry }) => <a href={`#${entry.data.slug}`}>{entry.data.title}</a>)}
+    </nav>
+  </div>
+
+  <div class="container research-list">
+    {
+      rendered.map(({ entry, Content }) => (
+        <section class="research-entry" id={entry.data.slug} aria-labelledby={`${entry.data.slug}-title`}>
+          <aside class="research-aside">
+            <div class="research-logo">
+              <LocalImage
+                src={entry.data.image}
+                alt={entry.data.image_alt}
+                sizes="(max-width: 600px) 60vw, 250px"
+              />
+            </div>
+            {entry.data.location && (
+              <>
+                <p class="eyebrow">Location</p>
+                <p class="research-location">{entry.data.location}</p>
+              </>
+            )}
+            {entry.data.links && entry.data.links.length > 0 && (
+              <div class="research-links">
+                {entry.data.links.map((link) => (
+                  <a href={link.url} rel="noopener noreferrer">{link.label} <span aria-hidden="true">↗</span></a>
+                ))}
+              </div>
+            )}
+          </aside>
+          <article class="prose">
+            <h2 id={`${entry.data.slug}-title`}>{entry.data.title}</h2>
+            {entry.data.goals && entry.data.goals.length > 0 && (
+              <div class="research-goals">
+                <h3>Research goals</h3>
+                <ul>
+                  {entry.data.goals.map((goal) => <li>{goal}</li>)}
+                </ul>
+              </div>
+            )}
+            <Content />
+            {entry.data.contributions && entry.data.contributions.length > 0 && (
+              <div class="contributions">
+                <h3>Group contributions</h3>
+                <ul>
+                  {entry.data.contributions.map((item) => <li>{item}</li>)}
+                </ul>
+              </div>
+            )}
+          </article>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>

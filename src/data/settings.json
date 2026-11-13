@@ -1,0 +1,49 @@
+{
+  "name": "Neutrino & Dark Matter Group",
+  "fullName": "Neutrino and Dark Matter Group at CUHK-Shenzhen",
+  "institution": "The Chinese University of Hong Kong, Shenzhen",
+  "institutionShort": "CUHK-Shenzhen",
+  "school": "School of Science and Engineering",
+  "domain": "https://yegroup.cuhk.edu.cn",
+  "description": "The Neutrino & Dark Matter Group at CUHK-Shenzhen studies dark matter, neutrinos and rare-event physics with noble-liquid detectors, including the XENONnT and RELICS experiments.",
+  "email": "yejingqiang@cuhk.edu.cn",
+  "phone": "+86 0755-23519735",
+  "address": [
+    "School of Science and Engineering",
+    "The Chinese University of Hong Kong, Shenzhen",
+    "No. 2001 Longxiang Blvd., Longgang Dist.",
+    "Shenzhen 518172, China"
+  ],
+  "universityUrl": "https://www.cuhk.edu.cn/en",
+  "homepage": {
+    "newsLimit": 3,
+    "featuredLimit": 5,
+    "galleryPreviewLimit": 3,
+    "activityPreviewLimit": 3
+  },
+  "hero": {
+    "slides": [
+      {
+        "image": "/assets/images/group_photo/2026CM_Beijing/WechatIMG3905.jpg",
+        "alt": "XENON collaboration meeting in Beijing, October 2026.",
+        "caption": "Group photo @Oct. 2026. From left to right: Jiafu, Haoyun, Zhaowei, Jingqiang, Elena, Jie (David), Huayu, Hongkun."
+      },
+      {
+        "image": "/assets/images/group_photo/202609.jpg",
+        "alt": "Group photograph, September 2026.",
+        "caption": "Group photo @Sep. 2026. From left to right: Jingqiang, Kexin, Haoyun, Hongkun, Tianyuan, Jie (David), Huayu, Zixi, Shenyu."
+      },
+      {
+        "image": "/assets/images/group_photo/groupphoto_20250110-1.jpg",
+        "alt": "Six members of the group standing together on a campus lawn in front of a tall tower.",
+        "caption": "Group photo @Jan. 10, 2025. From left to right: Jie (David), Tianyuan, Yuanyuan, Jingqiang, Huayu, Zhaowei."
+      },
+      {
+        "image": "/assets/images/group_photo/groupphoto_20240711.jpg",
+        "alt": "Six group members standing behind a large SSE sign inside a building.",
+        "caption": "Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam)."
+      }
+    ]
+  },
+  "socialImage": "/assets/images/group_photo/groupphoto_20240711.jpg"
+}

@@ -1,0 +1,37 @@
+---
+import type { Album } from '../lib/content';
+import { formatAlbumDate, formatAlbumDateTime } from '../lib/content';
+import LocalImage from './LocalImage.astro';
+
+interface Props {
+  albums: Album[];
+  limit?: number;
+}
+
+const { albums, limit = 3 } = Astro.props;
+const previews = albums.slice(0, limit);
+---
+
+{
+  previews.length > 0 && (
+    <div class="gallery-preview-grid">
+      {previews.map((album) => (
+        <a class="gallery-preview-card" href={`/gallery/${album.slug}/`}>
+          <LocalImage
+            src={album.cover}
+            alt={album.photos.find((photo) => photo.image === album.cover)?.alt ?? album.title}
+            sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 360px"
+          />
+          <span class="gallery-preview-meta">
+            <span>{album.category}</span>
+            {album.date && <time datetime={formatAlbumDateTime(album)}>{formatAlbumDate(album)}</time>}
+          </span>
+          <strong>{album.title}</strong>
+          <span class="gallery-preview-count">
+            {album.photos.length} photo{album.photos.length === 1 ? '' : 's'}
+          </span>
+        </a>
+      ))}
+    </div>
+  )
+}

@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ActivityList from '../../components/ActivityList.astro';
+import { activityCategories, publishedActivities } from '../../lib/content';
+
+const categoryDescriptions: Record<string, string> = {
+  Seminar: 'Talks hosted by the group on campus.',
+  'External Talk': 'Talks given outside our university or group.',
+  'Undergraduate Lecture': 'Lectures for undergraduate students on campus.',
+};
+
+const groups = activityCategories.map((category) => ({
+  category,
+  id: `activity-group-${category.toLowerCase().replace(/\s+/g, '-')}`,
+  description: categoryDescriptions[category],
+  items: publishedActivities.filter((activity) => activity.category === category),
+}));
+const listedGroups = groups.filter((group) => group.items.length > 0);
+---
+
+<BaseLayout
+  title="Activities"
+  description="Seminars hosted by the Neutrino & Dark Matter Group, talks given outside the university, and undergraduate lectures on campus."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Activities</p>
+    <h1>Seminars, talks and teaching.</h1>
+    <p class="lead">
+      This page brings together seminars hosted by the group, talks given outside our university,
+      and lectures for undergraduate students on campus.
+    </p>
+  </div>
+
+  <section class="container activity-overview" aria-labelledby="activity-overview-title">
+    <div class="activity-overview-heading">
+      <p class="eyebrow">Three kinds of activity</p>
+      <h2 id="activity-overview-title">What this page collects</h2>
+    </div>
+    <div class="activity-category-grid">
+      {
+        groups.map((group) => (
+          <article class="activity-category-card">
+            <h3>{group.category}</h3>
+            <p>{group.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <div class="container activities-archive">
+    {
+      listedGroups.length === 0 ? (
+        <div class="empty-state activities-empty">
+          <h2>No activities listed yet</h2>
+          <p>
+            Seminars hosted by the group, talks given outside our university, and lectures for
+            undergraduate students on campus will appear here when details are available.
+          </p>
+        </div>
+      ) : (
+        <>
+          <h2 class="visually-hidden">Published activities</h2>
+          {listedGroups.map((group) => (
+            <section class="activity-group" aria-labelledby={group.id}>
+              <div class="activity-group-heading">
+                <h2 id={group.id}>{group.category}</h2>
+                <span>
+                  {group.items.length} {group.items.length === 1 ? 'activity' : 'activities'}
+                </span>
+              </div>
+              <ActivityList items={group.items} />
+            </section>
+          ))}
+        </>
+      )
+    }
+  </div>
+</BaseLayout>

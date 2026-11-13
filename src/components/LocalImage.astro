@@ -1,0 +1,46 @@
+---
+import { getMediaImage } from '../lib/content';
+
+interface Props {
+  src: string;
+  alt: string;
+  sizes?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  sizes = '100vw',
+  loading = 'lazy',
+  fetchpriority = 'auto',
+  class: className,
+} = Astro.props;
+
+const image = getMediaImage(src);
+const variants = image.variants;
+const largest = variants[variants.length - 1];
+
+if (!largest) {
+  throw new Error(`No generated image variants were found for ${src}`);
+}
+
+const srcset = variants.map((variant) => `${variant.src} ${variant.width}w`).join(', ');
+---
+
+<picture>
+  <source type="image/webp" srcset={srcset} sizes={sizes} />
+  <img
+    src={src}
+    alt={alt}
+    width={image.width}
+    height={image.height}
+    sizes={sizes}
+    loading={loading}
+    decoding="async"
+    fetchpriority={fetchpriority}
+    class={className}
+  />
+</picture>

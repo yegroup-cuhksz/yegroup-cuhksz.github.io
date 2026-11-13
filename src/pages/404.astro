@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page not found"
+  description="The requested page could not be found. Use the site navigation to continue."
+  noindex
+  canonicalPath="/404.html"
+>
+  <section class="container not-found">
+    <p class="eyebrow">404 / Not found</p>
+    <h1>This page is not here.</h1>
+    <p>
+      The address may have changed, or the page may no longer exist. Use the navigation above or
+      one of the links below to continue.
+    </p>
+    <div class="hero-actions">
+      <a class="button" href="/">Return home <span aria-hidden="true">→</span></a>
+      <a class="button button-light" href="/people/">People <span aria-hidden="true">→</span></a>
+      <a class="button button-light" href="/publication/">Publications <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>

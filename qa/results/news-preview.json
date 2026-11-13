@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-12",
+  "request": "Local Solar pp news template preview",
+  "run_id": "20261112-183645-b0a537c4",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "runner_status": "ready_for_gpt_review",
+  "cli_exit_code": 0,
+  "turn_completed": true,
+  "event_errors": [],
+  "source_unchanged": true,
+  "patch_sha256": "c5953549e3f94c771069c759f9aa7ed92d9ae65f89bac701ea1a11c68cfd207f",
+  "changed_content_path": "src/data/news.json",
+  "news_sha256": "f054433a930d30a5be17f967fed8fdeda2597662ac10bd51460953dba9c26068",
+  "primary_sources": [
+    "https://arxiv.org/abs/2608.29450",
+    "https://xenonexperiment.org/xenonnt-first-measurement-of-low-energy-solar-neutrinos-scattering-off-electrons/"
+  ],
+  "announcement_date": "2026-08-31",
+  "sample_status": "published for local preview; visible category and editorial note",
+  "independent_review": "Full one-file patch, actual-source baseline, syntax/schema and generated routes verified",
+  "checks": {
+    "build": "PASS, 22 static HTML pages",
+    "static_audit": "PASS, 856 assertions",
+    "preview_labels_and_routes": "PASS, home/archive/detail/date/source/sitemap",
+    "live_development_http": "PASS, home/archive/detail each HTTP 200 with sample content",
+    "chrome": "Homepage entry and detail text/source observed through native accessibility; entry click reached expected route",
+    "full_visual_qa": "Incomplete: screenshot/control reliability limitation persists"
+  },
+  "no_deployment": true
+}

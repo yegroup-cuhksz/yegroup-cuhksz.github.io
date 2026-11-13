@@ -1,0 +1,20 @@
+{
+  "name": "ye-group-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/generate-media.mjs && ASTRO_TELEMETRY_DISABLED=1 astro dev --host 127.0.0.1",
+    "build": "node scripts/generate-media.mjs && node scripts/validate-content.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview --host 127.0.0.1",
+    "check": "node scripts/validate-content.mjs",
+    "media": "node scripts/generate-media.mjs",
+    "astro": "ASTRO_TELEMETRY_DISABLED=1 astro"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "astro": "6.4.8"
+  }
+}

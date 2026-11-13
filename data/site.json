@@ -1,0 +1,274 @@
+{
+  "name": "Neutrino and Dark Matter Group",
+  "institution": "The Chinese University of Hong Kong, Shenzhen",
+  "members": [
+    {
+      "slug": "jingqiang-ye",
+      "name": "Jingqiang Ye",
+      "chinese": "叶靖强",
+      "role": "Principal Investigator",
+      "email": "yejingqiang@cuhk.edu.cn",
+      "office": "Rx613",
+      "image": "assets/images/profile_photo/jingqiang2-689642022-e1732801026118.jpg",
+      "profile_image": "assets/images/profile_photo/yejingqiang1.jpg",
+      "bio_file": "data/jingqiang-ye.html"
+    },
+    {
+      "slug": "jiafu-li",
+      "name": "Jiafu Li",
+      "chinese": "李家富",
+      "role": "Postdoc",
+      "email": "lijiafu@cuhk.edu.cn",
+      "office": "Rx618",
+      "image": "assets/images/profile_photo/jiafuli.png",
+      "profile_image": "assets/images/profile_photo/jiafuli.png",
+      "bio_file": "data/jiafu-li.html"
+    },
+    {
+      "slug": "huayu-dai",
+      "name": "Huayu Dai",
+      "chinese": "戴华煜",
+      "role": "PhD Student",
+      "email": "huayudai@link.cuhk.edu.cn",
+      "office": "Rx618",
+      "image": "assets/images/profile_photo/tempimagetm8w31.jpg",
+      "profile_image": "assets/images/profile_photo/tempimagetm8w31.jpg",
+      "bio_file": "data/huayu-dai.html"
+    },
+    {
+      "slug": "hongkun-li",
+      "name": "Hongkun Li",
+      "chinese": "李宏坤",
+      "role": "PhD Student",
+      "email": "hongkunli@link.cuhk.edu.cn",
+      "office": "Rx618",
+      "image": "assets/images/profile_photo/tempimageu02rr4.jpg",
+      "profile_image": "assets/images/profile_photo/tempimageu02rr4.jpg",
+      "bio_file": "data/hongkun-li.html"
+    },
+    {
+      "slug": "haoyun-liu",
+      "name": "Haoyun Liu",
+      "chinese": "刘皓昀",
+      "role": "PhD Student",
+      "email": "haoyunliu@link.cuhk.edu.cn",
+      "office": "Rx618",
+      "image": "assets/images/profile_photo/haoyun.jpeg",
+      "profile_image": "assets/images/profile_photo/haoyun.jpeg",
+      "bio_file": "data/haoyun-liu.html"
+    },
+    {
+      "slug": "yuanyuan-ren",
+      "name": "Yuanyuan Ren",
+      "chinese": "任媛媛",
+      "role": "BSc Student",
+      "email": "yuanyuanren@link.cuhk.edu.cn",
+      "office": "",
+      "image": "assets/images/profile_photo/renyuanyuan-346225708-e1732800139141.jpeg",
+      "profile_image": "assets/images/profile_photo/renyuanyuan-346225708-e1732800139141.jpeg",
+      "bio_file": "data/yuanyuan-ren.html"
+    },
+    {
+      "slug": "tianyuan-zha",
+      "name": "Tianyuan Zha",
+      "chinese": "查天源",
+      "role": "BSc Student",
+      "email": "tianyuanzha@link.cuhk.edu.cn",
+      "office": "",
+      "image": "assets/images/profile_photo/tianyuanzha.jpg",
+      "profile_image": "assets/images/profile_photo/tianyuanzha.jpg",
+      "bio_file": "data/tianyuan-zha.html"
+    },
+    {
+      "slug": "zixi-chen",
+      "name": "Zixi Chen",
+      "chinese": "陈子曦",
+      "role": "BSc Student",
+      "email": "zixichen@link.cuhk.edu.cn",
+      "office": "Rx618",
+      "image": "assets/images/profile_photo/zixichen-e1747299946193.jpg",
+      "profile_image": "assets/images/profile_photo/zixichen-e1747299946193.jpg",
+      "bio_file": "data/zixi-chen.html"
+    },
+    {
+      "slug": "xiaoling-cheng",
+      "name": "Xiaoling Cheng",
+      "chinese": "程小玲",
+      "role": "Executive Assistant",
+      "email": "chengxiaoling@cuhk.edu.cn",
+      "office": "TC401b",
+      "image": "assets/images/profile_photo/xiaolingcheng1.jpg",
+      "profile_image": "assets/images/profile_photo/xiaolingcheng-2.jpg",
+      "bio_file": "data/xiaoling-cheng.html"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Challenging spontaneous quantum collapse with the XENONnT dark matter detector",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2026",
+      "venue": "Phys. Rev. Lett. 136, 120201 (2026)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/2jm3-4976"
+    },
+    {
+      "title": "Search for Light Dark Matter in Low-Energy Ionization Signals from XENONnT",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2025",
+      "venue": "Phys. Rev. Lett. 134, 161004 (2025)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.161004"
+    },
+    {
+      "title": "First Measurement of Solar 8B Neutrinos via Coherent Elastic Neutrino-Nucleus Scattering with XENONnT",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2024",
+      "venue": "Phys. Rev. Lett. 133, 191002 (2024)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.191002"
+    },
+    {
+      "title": "REactor neutrino LIquid xenon Coherent elastic Scattering experiment",
+      "authors": "C. Cai et al. (RELICS Collaboration)",
+      "year": "2024",
+      "venue": "Phys. Rev. D 110, 072011 (2024)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.072011"
+    },
+    {
+      "title": "First Dark Matter Search with Nuclear Recoils from the XENONnT Experiment",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2023",
+      "venue": "Phys. Rev. Lett. 131, 041003 (2023)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.131.041003"
+    },
+    {
+      "title": "Detector signal characterization with a Bayesian network in XENONnT",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2023",
+      "venue": "Phys. Rev. D 108, 012016 (2023)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.012016"
+    },
+    {
+      "title": "Search for New Physics in Electronic Recoils from XENONnT",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2022",
+      "venue": "Phys. Rev. Lett. 129, 161805 (2022)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.129.161805"
+    },
+    {
+      "title": "Snowmass2021 Cosmic Frontier White Paper: Puzzling Excesses in Dark Matter Searches and How to Resolve Them",
+      "authors": "R. Leane et al.",
+      "year": "2022",
+      "venue": "arXiv:2203.06859 (2022)",
+      "url": "https://arxiv.org/abs/2203.06859"
+    },
+    {
+      "title": "Development and performance of a sealed liquid xenon time projection chamber",
+      "authors": "Y. Wei, J. Long, F. Lombardi, Z. Jiang, J. Ye and K. Ni",
+      "year": "2021",
+      "venue": "JINST 16 P01018 (2021)",
+      "url": "https://iopscience.iop.org/article/10.1088/1748-0221/16/01/P01018"
+    },
+    {
+      "title": "Excess Electronic Recoil Events in XENON1T",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2020",
+      "venue": "Phys. Rev. D. 102, 072004 (2020)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.102.072004"
+    },
+    {
+      "title": "XENON1T Dark Matter Data Analysis: Signal Reconstruction, Calibration and Event Selection",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2019",
+      "venue": "Phys. Rev. D 100, 052014 (2019)",
+      "url": "https://dx.doi.org/10.1103/PhysRevD.100.052014"
+    },
+    {
+      "title": "Observation of Two-neutrino Double Electron Capture in 124Xe with XENON1T",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2019",
+      "venue": "Nature 568, 532-535 (2019)",
+      "url": "https://www.nature.com/articles/s41586-019-1124-4"
+    },
+    {
+      "title": "Dark matter search results from a one ton-year exposure of XENON1T",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2018",
+      "venue": "Phys. Rev. Lett. 121, 111302 (2018)",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.111302"
+    },
+    {
+      "title": "Signal yields of keV electronic recoils and their discrimination from nuclear recoils in liquid xenon",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2018",
+      "venue": "Phys. Rev. D 97, 092007 (2018)",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092007"
+    },
+    {
+      "title": "First Dark Matter Search Results from the XENON1T Experiment",
+      "authors": "E. Aprile et al. (XENON Collaboration)",
+      "year": "2017",
+      "venue": "Phys. Rev. Lett. 119, 181301 (2017)",
+      "url": "https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.119.181301"
+    }
+  ],
+  "research": [
+    {
+      "title": "XENONnT Dark Matter Experiment",
+      "image": "assets/images/logo/logo_standard.png",
+      "slug": "xenonnt",
+      "body_file": "data/research-xenonnt.html"
+    },
+    {
+      "title": "RELICS Reactor Neutrino Experiment",
+      "image": "assets/images/logo/relics_logo.jpg",
+      "slug": "relics",
+      "body_file": "data/research-relics.html"
+    }
+  ],
+  "alumni": [
+    "Jie Tang (Bsc student, 2024-2026): now master student at Nagoya University.",
+    "Yuechen Li (Bsc student, 2025-2026): now exchange student at University of Oxford.",
+    "Zhaowei Song (RA, 2024-2026): now PhD student at Westlake University.",
+    "Zhangjian Liang (RA, 2024): now graduate student at CityU-Dongguan.",
+    "Haowen Si (Bsc student, 2024): now graduate student at Amsterdam University.",
+    "Tingyi He (summer student, 2024): now graduate student at Amsterdam University.",
+    "Linzheng Tan (Bsc student, 2024): now undergraduate student at CUHK-Shenzhen."
+  ],
+  "hero_gallery": [
+    {
+      "image": "assets/images/group_photo/202609.jpg",
+      "alt": "Group photograph, September 2026.",
+      "caption": ""
+    },
+    {
+      "image": "assets/images/group_photo/groupphoto_20250110-1.jpg",
+      "alt": "The Ye Group on the CUHK-Shenzhen campus, January 2025.",
+      "caption": "Group photo @Jan. 10, 2025. From left to right: Jie (David), Tianyuan, Yuanyuan, Jingqiang, Huayu, Zhaowei."
+    },
+    {
+      "image": "assets/images/group_photo/groupphoto_20240711.jpg",
+      "alt": "The Ye Group together, July 2024.",
+      "caption": "Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam)."
+    }
+  ],
+  "gallery": [
+    {
+      "image": "assets/images/group_photo/groupphoto_20250110-1.jpg",
+      "caption": "Group photo @Jan. 10, 2025. From left to right: Jie (David), Tianyuan, Yuanyuan, Jingqiang, Huayu, Zhaowei."
+    },
+    {
+      "image": "assets/images/research_photo/e181_1.png",
+      "caption": "XENONnT solar B-8 CEvNS result was selected as one of the highlights of 2024 by APS Physics Magazine."
+    },
+    {
+      "image": "assets/images/group_photo/groupphoto_20240711.jpg",
+      "caption": "Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam)."
+    }
+  ],
+  "email": "yejingqiang@cuhk.edu.cn",
+  "phone": "+86 0755-23519735",
+  "address": [
+    "School of Science and Engineering",
+    "The Chinese University of Hong Kong, Shenzhen",
+    "No. 2001 Longxiang Blvd., Longgang Dist.",
+    "Shenzhen 518172, China"
+  ]
+}

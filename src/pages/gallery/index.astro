@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { albums, formatAlbumDate, formatAlbumDateTime } from '../../lib/content';
+import LocalImage from '../../components/LocalImage.astro';
+---
+
+<BaseLayout
+  title="Gallery"
+  description="Photographs from the Neutrino & Dark Matter Group at CUHK-Shenzhen, organised into activity albums."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">Gallery</p>
+    <h1>Moments from the group.</h1>
+    <p class="lead">
+      Activity albums bring together dated group photographs. Open an album to see its ordered
+      photographs and original captions.
+    </p>
+    <p class="gallery-intro-note">
+      {albums.length} album{albums.length === 1 ? '' : 's'} · {albums.reduce((total, album) => total + album.photos.length, 0)} photograph{albums.reduce((total, album) => total + album.photos.length, 0) === 1 ? '' : 's'}
+    </p>
+  </div>
+
+  <div class="container">
+    {
+      albums.length === 0 ? (
+        <div class="empty-state">
+          <h2>No albums yet</h2>
+          <p>Group photographs will appear here as activity albums become available.</p>
+        </div>
+      ) : (
+        <div class="album-grid">
+          {albums.map((album) => (
+            <article class="album-card">
+              <a class="album-cover" href={`/gallery/${album.slug}/`}>
+                <LocalImage
+                  src={album.cover}
+                  alt={album.photos.find((photo) => photo.image === album.cover)?.alt ?? album.title}
+                  sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 580px"
+                />
+              </a>
+              <div class="album-card-meta">
+                <span>{album.category}</span>
+                {album.date && <time datetime={formatAlbumDateTime(album)}>{formatAlbumDate(album)}</time>}
+              </div>
+              <h2><a href={`/gallery/${album.slug}/`}>{album.title}</a></h2>
+              {album.description && <p>{album.description}</p>}
+              <span class="album-count">
+                {album.photos.length} photo{album.photos.length === 1 ? '' : 's'}
+              </span>
+            </article>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>

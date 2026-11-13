@@ -1,0 +1,38 @@
+---
+import type { NewsItem } from '../lib/content';
+import { formatNewsDate } from '../lib/content';
+
+interface Props {
+  items: NewsItem[];
+  compact?: boolean;
+  linked?: boolean;
+}
+
+const { items, compact = false, linked = true } = Astro.props;
+---
+
+<ul class:list={['news-list', { compact }]}>
+  {
+    items.map((item) => (
+      <li class="news-item">
+        <time datetime={item.date}>{formatNewsDate(item)}</time>
+        <div class="news-item-content">
+          <p class="news-category">{item.category}</p>
+          {item.editorial_preview && (
+            <p class="news-preview-note">
+              <strong>Editorial preview.</strong>{' '}
+              {item.preview_note ?? 'Not an approved group announcement.'}
+            </p>
+          )}
+          <h3>
+            {linked ? <a href={`/news/${item.slug}/`}>{item.title}</a> : item.title}
+          </h3>
+          <p>{item.summary}</p>
+          {item.event_date && item.event_date !== item.date && (
+            <p class="news-event-date">Event date: {formatNewsDate({ ...item, date: item.event_date })}</p>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ul>

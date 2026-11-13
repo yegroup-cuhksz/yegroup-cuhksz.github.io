@@ -1,0 +1,83 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LocalImage from '../components/LocalImage.astro';
+
+export async function getStaticPaths() {
+  const members = await getCollection('members');
+  const seen = new Set<string>();
+  for (const member of members) {
+    if (seen.has(member.data.slug)) {
+      throw new Error(`Duplicate member slug "${member.data.slug}" cannot generate a profile route.`);
+    }
+    seen.add(member.data.slug);
+  }
+  return members.map((member) => ({
+    params: { member: member.data.slug },
+    props: { member },
+  }));
+}
+
+const { member } = Astro.props;
+const { Content } = await render(member);
+const portrait = member.data.profile_portrait ?? member.data.portrait;
+const portraitAlt =
+  member.data.profile_portrait_alt ??
+  member.data.portrait_alt ??
+  `Portrait of ${member.data.name}`;
+---
+
+<BaseLayout
+  title={member.data.name}
+  description={`${member.data.name}, ${member.data.role} in the Neutrino & Dark Matter Group at CUHK-Shenzhen.`}
+  image={member.data.portrait ?? undefined}
+>
+  <div class="container breadcrumb">
+    <a href="/people/">People</a> / {member.data.name}
+  </div>
+
+  <div class="container profile-layout">
+    <aside class="profile-aside">
+      {
+        portrait ? (
+          <div class="profile-photo">
+            <LocalImage
+              src={portrait}
+              alt={portraitAlt}
+              sizes="(max-width: 600px) 80vw, 300px"
+              loading="eager"
+            />
+          </div>
+        ) : (
+          <div class="profile-photo">
+            <span class="member-photo-fallback" aria-hidden="true">{member.data.name.charAt(0)}</span>
+          </div>
+        )
+      }
+      <p class="member-role">{member.data.role}</p>
+      <div class="profile-contact">
+        {member.data.email && <a href={`mailto:${member.data.email}`}>{member.data.email}</a>}
+        {member.data.office && <p>Office: {member.data.office}</p>}
+        {member.data.cv && <a href={member.data.cv}>Curriculum vitae (PDF)</a>}
+      </div>
+      {
+        member.data.links && member.data.links.length > 0 && (
+          <div class="profile-links">
+            {member.data.links.map((link) => (
+              <a href={link.url} rel="noopener noreferrer">{link.label} <span aria-hidden="true">↗</span></a>
+            ))}
+          </div>
+        )
+      }
+    </aside>
+
+    <article class="profile-bio">
+      <p class="eyebrow">Profile</p>
+      <h1>{member.data.name}</h1>
+      {member.data.chinese && <p class="profile-chinese">{member.data.chinese}</p>}
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+  </div>
+</BaseLayout>

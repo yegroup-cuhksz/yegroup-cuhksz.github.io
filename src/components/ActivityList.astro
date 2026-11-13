@@ -1,0 +1,40 @@
+---
+import type { Activity } from '../lib/content';
+import { formatIsoDate } from '../lib/content';
+
+interface Props {
+  items: Activity[];
+  compact?: boolean;
+}
+
+const { items, compact = false } = Astro.props;
+---
+
+<ul class:list={['activity-list', { compact }]}>
+  {
+    items.map((activity) => {
+      const speaker = activity.speaker
+        ? `Speaker: ${activity.speaker}${activity.affiliation ? `, ${activity.affiliation}` : ''}`
+        : activity.affiliation;
+      const meta = [speaker, activity.venue].filter(Boolean);
+      return (
+        <li class:list={['activity-item', { 'activity-item-wide': !activity.date && !activity.time }]}>
+          {(activity.date || activity.time) && (
+            <div class="activity-when">
+              {activity.date && <time datetime={activity.date}>{formatIsoDate(activity.date)}</time>}
+              {activity.time && <span>{activity.time}</span>}
+            </div>
+          )}
+          <div class="activity-item-content">
+            <p class="activity-category">{activity.category}</p>
+            <h3>
+              <a href={`/activities/${activity.slug}/`}>{activity.title}</a>
+            </h3>
+            <p>{activity.summary}</p>
+            {meta.length > 0 && <p class="activity-meta">{meta.join(' · ')}</p>}
+          </div>
+        </li>
+      );
+    })
+  }
+</ul>

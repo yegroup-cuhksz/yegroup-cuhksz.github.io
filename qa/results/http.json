@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "checks": 110,
+  "errors": [],
+  "scope": "Loopback static HTTP; no Nginx or browser refresh verification"
+}

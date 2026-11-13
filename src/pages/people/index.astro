@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import MemberCard from '../../components/MemberCard.astro';
+import { alumni } from '../../lib/content';
+
+const members = (await getCollection('members')).sort(
+  (a, b) =>
+    a.data.group_order - b.data.group_order ||
+    a.data.sort_order - b.data.sort_order ||
+    a.data.name.localeCompare(b.data.name),
+);
+
+const seen = new Set<string>();
+for (const member of members) {
+  if (seen.has(member.data.slug)) throw new Error(`Duplicate member slug: ${member.data.slug}`);
+  seen.add(member.data.slug);
+}
+
+const groups = new Map<string, typeof members>();
+for (const member of members) {
+  const current = groups.get(member.data.group) ?? [];
+  current.push(member);
+  groups.set(member.data.group, current);
+}
+---
+
+<BaseLayout
+  title="People"
+  description="Meet the Principal Investigator, postdoctoral researchers, PhD students, undergraduate students and support staff of the Neutrino & Dark Matter Group."
+>
+  <div class="container page-intro">
+    <p class="eyebrow">People</p>
+    <h1>A small group with a broad experimental programme.</h1>
+    <p class="lead">
+      {members.length} current members contribute to the group’s research, detector work and
+      academic life. Select a profile for education, background and contact details.
+    </p>
+  </div>
+
+  <div class="container members-section">
+    {
+      [...groups.entries()].map(([group, groupMembers]) => (
+        <section class="member-group" aria-labelledby={`group-${group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>
+          <div class="member-group-heading">
+            <h2 id={`group-${group.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}>{group}</h2>
+            <span>{groupMembers.length} member{groupMembers.length === 1 ? '' : 's'}</span>
+          </div>
+          <div class="members-grid">
+            {groupMembers.map((member) => <MemberCard member={member} />)}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <section class="container member-group alumni-inline" aria-labelledby="alumni-heading">
+    <div class="member-group-heading">
+      <h2 id="alumni-heading">Alumni</h2>
+      <span>{alumni.length} former member{alumni.length === 1 ? '' : 's'}</span>
+    </div>
+    <p class="alumni-inline-intro">
+      Previous students and research assistants, with their former roles and subsequent
+      destinations.
+    </p>
+    {
+      alumni.length === 0 ? (
+        <div class="empty-state">
+          <h2>No alumni records yet</h2>
+          <p>Former members will be listed here when records become available.</p>
+        </div>
+      ) : (
+        <ol class="alumni-list alumni-list-inline">
+          {alumni.map((person) => (
+            <li class="alumni-row">
+              <h2>{person.name}</h2>
+              <p class="alumni-role">{person.period ? `${person.role} · ${person.period}` : person.role}</p>
+              {person.destination && <p>{person.destination}</p>}
+            </li>
+          ))}
+        </ol>
+      )
+    }
+  </section>
+</BaseLayout>
