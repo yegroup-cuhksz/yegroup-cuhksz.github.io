@@ -88,7 +88,14 @@ Activities use `/activities/` and generate `/activities/<slug>/` for published r
 
 ## Deployment
 
-Read [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) before deploying. It contains a reviewable Nginx
-example, release layout, server-side Git deployment, HTTPS placeholders, 404 and clean-URL
-handling, validation, backup and rollback guidance. Server commands in that document were not
-executed as part of this implementation.
+There are two deployment options:
+
+- [`docs/STATIC_HOST_DEPLOYMENT.md`](docs/STATIC_HOST_DEPLOYMENT.md) describes the managed-static
+  production path using Alibaba Cloud OSS, Tencent Cloud COS or an equivalent institutional
+  platform, including GitHub deployment, WordPress cutover, redirects and rollback.
+- [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) contains the single-Windows-host and Nginx
+  deployment plan, including release layout and a reviewable Nginx example.
+
+The managed-static deployment is preferred for the permanent public site. Do not change the
+university CNAME or WordPress.com domain mapping until the replacement site has passed its
+pre-launch checks.
