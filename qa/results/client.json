@@ -1,5 +1,0 @@
-{
-  "status": "PASS",
-  "checks": 12,
-  "method": "Compiled JavaScript event harness; not browser QA"
-}

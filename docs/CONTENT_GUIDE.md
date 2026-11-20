@@ -103,9 +103,8 @@ number of records (`settings.homepage.featuredLimit`, currently 5) unique, conti
 }
 ```
 
-The current featured selection is provisional and still requires group confirmation; see
-`docs/IMPLEMENTATION_NOTES.md`. All publication records, featured or not, remain on the full
-Publications page.
+The current featured selection is provisional and still requires group confirmation. All
+publication records, featured or not, remain on the full Publications page.
 
 ## Adding a research project
 
@@ -186,8 +185,8 @@ Every published news item also receives a `/news/<slug>/` page, which is include
 
 ## Adding an activity
 
-Add an object to `src/data/activities.json`. The file starts as an empty array; do not add
-invented events, dates, speakers or past talks to fill the page.
+Add an object to `src/data/activities.json`. Only include verified events, dates, speakers and
+past talks; do not add invented records to fill the page.
 
 Required fields:
 
@@ -364,8 +363,8 @@ Alumni page count and list are generated from this file.
 timestamps to `Date` objects, so the collection schema requires a quoted string. The required
 visitor-facing `review_note` is shown beside the date. Each role has a `status` of `open`,
 `closed` or `general_inquiry`. Open and general-inquiry roles require `materials`; a closed role
-may omit them, and the page then hides its application-materials block. Keep capture provenance
-and pending group confirmation in `docs/IMPLEMENTATION_NOTES.md`, not in applicant-facing copy.
+may omit them, and the page then hides its application-materials block. Keep internal provenance
+and pending group confirmation out of applicant-facing copy.
 
 ## Settings and display limits
 
@@ -433,4 +432,4 @@ enforce these rules so a content-only addition cannot silently produce a broken 
 ## Review before release
 
 Recruitment availability, the provisional representative-paper selection, image credits and
-external links need group/editorial confirmation. See `docs/IMPLEMENTATION_NOTES.md`.
+external links need group/editorial confirmation.

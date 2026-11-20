@@ -15,9 +15,8 @@ npm run build
 Only the contents of `dist/` are deployed. The following must remain outside the Nginx document
 root:
 
-- `reference/` and the old prototype HTML/page folders.
-- `data/`, `assets/`, `public/` source files and `scripts/`.
-- `src/`, `plan.md`, `docs/`, `node_modules/`, `.astro/`, and Git metadata.
+- `src/`, `scripts/`, `docs/`, `public/` source files, `node_modules/`, `.astro/`, and Git
+  metadata.
 
 `npm run build` generates `dist/media/` from the supplied originals and copies the public
 assets. The `public/media/` working directory itself is ignored by Git.
@@ -68,7 +67,7 @@ map $request_uri $legacy_page_redirect {
     ~^/\?(?:[^&=]+(?:=[^&]*)?&)*page_id=109(?:&.*)?$  /alumni/;
 }
 
-# Archived WordPress upload paths from reference/source-inventory.json.
+# Archived WordPress upload paths.
 # Every value is a fixed local path, so no request input can choose the
 # redirect host or target.
 map $uri $legacy_media_redirect {
@@ -182,9 +181,8 @@ server {
 
 ### Archived media and CV redirect behaviour
 
-- The 17 unique `/wp-content/uploads/...` paths captured in
-  `reference/source-inventory.json` each redirect permanently to the matching supplied file
-  under `/assets/images/`.
+- The 17 archived `/wp-content/uploads/...` paths each redirect permanently to the matching
+  supplied file under `/assets/images/`.
 - Matching uses the normalized request path (`$uri`), so a query string on an archived media URL
   is ignored. Other `/wp-content/` paths are not redirected.
 - Every map value is a fixed root-relative local path. No captures or variable host names are
@@ -257,4 +255,4 @@ Do not delete the previous release or backup until the post-launch checks have p
 - Confirm the 404 page and HTTP status.
 - Check the CV download, representative publication links and official university link.
 - Confirm `robots.txt` and `sitemap.xml` use the official domain.
-- Record remaining content issues, especially those listed in `docs/IMPLEMENTATION_NOTES.md`.
+- Record remaining content issues before release.

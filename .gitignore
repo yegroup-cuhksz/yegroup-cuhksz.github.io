@@ -4,4 +4,3 @@ dist/
 .DS_Store
 __pycache__/
 public/media/
-.impeccable/hook.cache.json

@@ -4,7 +4,13 @@ Static website for the Neutrino & Dark Matter Group at The Chinese University of
 Shenzhen. The site is built with Astro 6 and produces static files intended for Nginx at
 `https://yegroup.cuhk.edu.cn`. No production deployment has been performed.
 
-See [`docs/ACCEPTANCE.md`](docs/ACCEPTANCE.md) for independent checks and remaining browser/release work.
+## Repository layout
+
+- `src/` — Astro pages, components, layouts and structured content.
+- `public/` — static files served by Astro, including the original images.
+- `scripts/` — media generation and content validation.
+- `docs/` — content editing and deployment guides.
+- `dist/`, `public/media/`, `.astro/` and `node_modules/` are generated or installed locally and are not tracked.
 
 ## Requirements
 
@@ -75,18 +81,10 @@ uses the installed `sharp` dependency to create compressed, responsive WebP vari
 ## Routes
 
 The legacy singular routes `/publication/` and `/opening/` are retained. Member profile URLs are
-kept at the site root, for example `/jingqiang-ye/`. See [`docs/URL_MAP.md`](docs/URL_MAP.md) for
-the full route and media mapping, including the two WordPress query URLs and the explicit
-archived media/CV redirects.
+kept at the site root, for example `/jingqiang-ye/`. The archived WordPress media/CV redirects are
+documented in [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
 Activities use `/activities/` and generate `/activities/<slug>/` for published records only.
-
-## Old prototype
-
-The repository still contains the captured WordPress prototype (`index.html`, page folders,
-`data/`, `assets/` and `reference/`). Those files are migration and provenance material, not part
-of the Astro application or the deployable `dist/` output. Do not copy `reference/`, `data/`,
-`scripts/` or the prototype HTML into the public document root.
 
 ## Deployment
 
