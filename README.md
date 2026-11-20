@@ -8,7 +8,7 @@ Shenzhen. The site is built with Astro 6 and produces static files intended for 
 
 - `src/` — Astro pages, components, layouts and structured content.
 - `public/` — static files served by Astro, including the original images.
-- `scripts/` — media generation and content validation.
+- `scripts/` — media generation, content validation and server-side deployment.
 - `docs/` — content editing and deployment guides.
 - `dist/`, `public/media/`, `.astro/` and `node_modules/` are generated or installed locally and are not tracked.
 
@@ -89,6 +89,6 @@ Activities use `/activities/` and generate `/activities/<slug>/` for published r
 ## Deployment
 
 Read [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) before deploying. It contains a reviewable Nginx
-example, release layout, HTTPS placeholders, 404 and clean-URL handling, validation, backup and
-rollback guidance. Server commands in that document were not executed as part of this
-implementation.
+example, release layout, server-side Git deployment, HTTPS placeholders, 404 and clean-URL
+handling, validation, backup and rollback guidance. Server commands in that document were not
+executed as part of this implementation.

@@ -40,6 +40,68 @@ place:
 Copy the verified `dist/` tree into a new release directory using the university-approved file
 transfer mechanism. Do not copy source directories into any public path.
 
+## Server-side Git deployment
+
+Use this when the lab server can reach GitHub and has Node.js 22.22.0, npm, Git and rsync.
+
+The server keeps a deploy-only checkout and never serves it directly. `scripts/server-deploy.sh`
+fetches the latest `main`, runs `npm ci`, validates and builds the site, copies `dist/` into a new
+release directory, and switches the `current` symlink. Nginx serves `current`, not the checkout.
+
+### One-time server setup
+
+Create a read-only GitHub deploy key on the server:
+
+```sh
+ssh-keygen -t ed25519 -C "ye-group-lab-server" -f ~/.ssh/ye_group_deploy -N ""
+cat ~/.ssh/ye_group_deploy.pub
+```
+
+Add the public key under the GitHub repository's **Settings → Deploy keys** with write access
+disabled. Then add a host entry:
+
+```sshconfig
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/ye_group_deploy
+  IdentitiesOnly yes
+```
+
+Verify access, then clone and run the first deployment:
+
+```sh
+ssh -T git@github.com
+
+sudo mkdir -p /srv/yegroup
+sudo chown -R "$USER":"$USER" /srv/yegroup
+git clone git@github.com:OA3lllhhy/ye-group-website.git /srv/yegroup/app
+cd /srv/yegroup/app
+./scripts/server-deploy.sh
+```
+
+Set the Nginx document root to `/srv/yegroup/current` and reload Nginx after `nginx -t`.
+
+If the server cannot use GitHub SSH on port 22 but can use HTTPS, clone with HTTPS and a
+read-only fine-grained token instead. Do not commit the token or place it in a public URL.
+
+### Updating from the Mac
+
+```sh
+npm run check
+npm run build
+git add -A
+git commit -m "Update site content"
+git push
+ssh USER@SERVER "cd /srv/yegroup/app && ./scripts/server-deploy.sh"
+```
+
+The deploy script keeps each release directory so a rollback is a symlink switch:
+
+```sh
+ssh USER@SERVER "cd /srv/yegroup && ln -sfn releases/<previous-release> current"
+```
+
 ## DNS, HTTPS and ownership
 
 Before changing production, confirm:
