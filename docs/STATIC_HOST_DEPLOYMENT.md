@@ -127,22 +127,12 @@ Node.js             22.22.0
 运行时依赖           无
 ```
 
-Linux 构建环境应使用仓库已有的命令：
+macOS 和 Linux 构建环境直接使用仓库已有的命令：
 
 ```sh
 npm ci
 npm run check
 npm run build
-```
-
-当前 Windows 上的 `npm run build` 受 POSIX 环境变量写法影响，直接运行会失败。在修复
-[`package.json`](../package.json) 之前，本地可以使用：
-
-```powershell
-$env:ASTRO_TELEMETRY_DISABLED = "1"
-npm run media
-npm run check
-npx astro build
 ```
 
 发布前确认：
@@ -268,9 +258,9 @@ OSS Bucket 名称通常要求全局唯一，最终名称以控制台可用性为
 
 ### 8.1 构建并打包
 
-```powershell
-Set-Location C:\Users\Administrator\Desktop\Group_page\ye-group-website
-$env:ASTRO_TELEMETRY_DISABLED = "1"
+```sh
+cd ~/Desktop/PhD/Group_page
+export ASTRO_TELEMETRY_DISABLED=1
 npm ci
 npm run media
 npm run check
@@ -279,20 +269,19 @@ npx astro build
 
 保留一份可回滚的构建快照：
 
-```powershell
-$release = Get-Date -Format "yyyyMMdd-HHmmss"
-Compress-Archive -Path .\dist\* `
-  -DestinationPath ".\release-$release.zip" -Force
+```sh
+release="$(date +%Y%m%d-%H%M%S)"
+tar -czf "release-$release.tar.gz" -C dist .
 ```
 
-`release-*.zip` 不应提交到 Git；构建记录和文件校验值应保存到部署日志。
+`release-*.tar.gz` 不应提交到 Git；构建记录和文件校验值应保存到部署日志。
 
 ### 8.2 阿里云上传
 
 先安装并配置 `ossutil`，然后执行：
 
-```powershell
-ossutil sync .\dist\ oss://<bucket-name>/ --delete
+```sh
+ossutil sync dist/ oss://<bucket-name>/ --delete
 ```
 
 `--delete` 会删除 Bucket 目标前缀中不存在于本次 `dist/` 的文件。只能在以下条件全部满足时
@@ -310,8 +299,8 @@ ossutil sync .\dist\ oss://<bucket-name>/ --delete
 
 先安装并配置 `coscli`，然后执行：
 
-```powershell
-coscli sync .\dist\ cos://<bucket-alias>/ -r --delete
+```sh
+coscli sync dist/ cos://<bucket-alias>/ -r --delete
 ```
 
 同样只有在 Bucket 已开启版本控制且目标前缀专用于本网站时，才允许使用 `--delete`。
