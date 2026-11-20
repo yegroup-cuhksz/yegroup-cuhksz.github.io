@@ -85,7 +85,9 @@ Set the Nginx document root to `/srv/yegroup/current` and reload Nginx after `ng
 If the server cannot use GitHub SSH on port 22 but can use HTTPS, clone with HTTPS and a
 read-only fine-grained token instead. Do not commit the token or place it in a public URL.
 
-### Updating from the Mac
+### Updating the site
+
+On the Mac, edit and push the changes:
 
 ```sh
 npm run check
@@ -93,13 +95,24 @@ npm run build
 git add -A
 git commit -m "Update site content"
 git push
-ssh USER@SERVER "cd /srv/yegroup/app && ./scripts/server-deploy.sh"
 ```
 
-The deploy script keeps each release directory so a rollback is a symlink switch:
+Then, in a terminal on the lab server itself, run:
 
 ```sh
-ssh USER@SERVER "cd /srv/yegroup && ln -sfn releases/<previous-release> current"
+cd /srv/yegroup/app
+./scripts/server-deploy.sh
+```
+
+No SSH from the Mac is required when the server can be operated directly. If remote access is
+used instead, the same command can be run through SSH.
+
+The deploy script keeps each release directory so a rollback is a symlink switch, also run on the
+server:
+
+```sh
+cd /srv/yegroup
+ln -sfn releases/<previous-release> current
 ```
 
 ## DNS, HTTPS and ownership
