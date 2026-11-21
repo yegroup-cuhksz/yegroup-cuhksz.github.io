@@ -4,6 +4,10 @@ All public content is generated from `src/content/` and `src/data/`. A record ad
 documented locations appears automatically on the relevant index, detail page, homepage preview
 or footer count without editing a page template.
 
+New editors should start with [EDITOR_TUTORIAL.md](EDITOR_TUTORIAL.md). Copyable examples are in
+[PAGE_TEMPLATES.md](PAGE_TEMPLATES.md), and branch/review rules are in
+[GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md).
+
 ## Commands
 
 ```sh

@@ -4,3 +4,8 @@ dist/
 .DS_Store
 __pycache__/
 public/media/
+
+# Local environment and release archives
+.env
+release-*.tar.gz
+release-*.zip

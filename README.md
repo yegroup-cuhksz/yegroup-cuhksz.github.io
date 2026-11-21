@@ -4,13 +4,26 @@ Static website for the Neutrino & Dark Matter Group at The Chinese University of
 Shenzhen. The site is built with Astro 6 and produces static files intended for Nginx at
 `https://yegroup.cuhk.edu.cn`. No production deployment has been performed.
 
+See [`docs/ROADMAP.md`](docs/ROADMAP.md) for the one-year plan, owners and review cadence.
+
 ## Repository layout
 
 - `src/` — Astro pages, components, layouts and structured content.
 - `public/` — static files served by Astro, including the original images.
 - `scripts/` — media generation, content validation and server-side deployment.
-- `docs/` — content editing and deployment guides.
+- `docs/` — content editing, deployment and planning guides.
 - `dist/`, `public/media/`, `.astro/` and `node_modules/` are generated or installed locally and are not tracked.
+
+## Documentation
+
+- [AI agent boundaries](AGENTS.md) — read before any AI-assisted change.
+- [Editor tutorial](docs/EDITOR_TUTORIAL.md) — start here for content updates and local preview.
+- [Page templates](docs/PAGE_TEMPLATES.md) — copyable templates for every content/page type.
+- [Content guide](docs/CONTENT_GUIDE.md) — field definitions, validation and editorial rules.
+- [GitHub workflow](docs/GITHUB_WORKFLOW.md) — branches, pull requests, review, releases and rollback.
+- [Roadmap](docs/ROADMAP.md) — one-year priorities, owners and review cadence.
+- [Lab server deployment](docs/DEPLOYMENT.md) — Nginx, release layout and rollback.
+- [Cloud static hosting](docs/STATIC_HOST_DEPLOYMENT.md) — OSS/COS + CDN migration guide.
 
 ## Requirements
 
@@ -18,7 +31,7 @@ Shenzhen. The site is built with Astro 6 and produces static files intended for 
 - npm with the committed `package-lock.json`
 - The dependencies already pinned in `package.json`; no additional runtime or browser framework
 
-## Install and develop
+## Install and develop on MAC
 
 ```sh
 npm ci
