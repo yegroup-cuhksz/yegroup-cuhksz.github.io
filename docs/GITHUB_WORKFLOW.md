@@ -8,22 +8,23 @@ pull request, never by editing the live server or the cloud bucket directly.
 
 ## Golden rules (read first)
 
-1. **Never commit or push directly to `main`.** `main` is protected.
-2. **Every change starts on a new branch** created from an up-to-date `main`.
-3. **Every change reaches `main` through a pull request.**
+1. **Contributors must never commit or push directly to `main`.** `main` is protected.
+2. **Contributors must start every change on a new branch** created from an up-to-date `main`.
+3. **Contributors must open a pull request.** The maintainer may commit directly to `main`.
 4. **Contributors must not merge their own pull request.** Only the maintainer merges.
 5. **Do not approve or merge without the required content approval** from the editor or PI.
 6. **Never force-push or delete `main`.**
 7. If branch protection blocks you, ask the maintainer. Do not try to bypass it.
 
 The repository setting enforces these rules for contributors. The maintainer is the only person
-allowed to use an administrative bypass, and only for an emergency with a recorded reason.
+allowed to push directly or use an administrative bypass. Maintainers should still use a
+branch/PR for risky or large changes so there is a review and rollback point.
 
 ## 1. Roles
 
 | Role | Responsibilities |
 | --- | --- |
-| Maintainer | Repository settings, CI, deployment, **the only role that merges to `main`**, backups, access review |
+| Maintainer | Repository settings, CI, deployment, **may commit/push directly to `main`**, the only role that merges PRs, backups, access review |
 | Editor | Copy quality, image permissions, alt text, content review; does not merge unless also the maintainer |
 | PI | Final approval for claims, people, roles, publications and positions; does not merge unless also the maintainer |
 | Contributor | Edits content or code on a branch, opens a pull request, responds to review; never merges to `main` |
@@ -44,8 +45,9 @@ short-lived, least-privilege credentials stored in GitHub Secrets.
 
 ## 3. Branch model
 
-`main` is read-only for contributors. **Do not edit files, commit or push while you are on
-`main`.** Create one short-lived branch per change.
+`main` is read-only for contributors. **Contributors must not edit, commit or push while on
+`main`.** Create one short-lived branch per change. The maintainer may commit directly to `main`,
+but should use a branch/PR for risky or large changes.
 
 Check your current branch before editing:
 
@@ -79,7 +81,8 @@ deployment changes in the same pull request.
 
 ## 4. Pull request workflow
 
-Follow these steps exactly. Do not skip the branch step.
+Contributors must follow these steps exactly. Do not skip the branch step. The maintainer may
+skip the PR for a small direct change; see the maintainer workflow below.
 
 1. Sync `main` (read only):
 
@@ -137,6 +140,31 @@ Follow these steps exactly. Do not skip the branch step.
     **Merge pull request**. Use **Squash and merge** to keep `main` history readable.
 12. Delete the branch after merging.
 
+## Maintainer direct workflow
+
+The maintainer may commit and push directly to `main` when they choose to skip the PR. This is a
+maintainer-only path; contributors must keep using branches and PRs.
+
+```sh
+git switch main
+git pull --ff-only
+# edit and validate
+npm run check
+npm run build
+git add <changed-files>
+git commit -m "docs: describe the change"
+git push origin main
+```
+
+Before pushing:
+
+- Review `git diff --cached`.
+- Confirm no generated files, secrets or unrelated changes are staged.
+- Confirm the target is the official repository and the `main` branch.
+
+Use a branch and PR for large, risky, cross-cutting or content-sensitive changes so there is a
+review and rollback point. Do not use direct-main pushes to bypass CI or review for contributors.
+
 ## If you accidentally commit to `main`
 
 Do not push. Move the commit onto a branch first:
@@ -167,9 +195,9 @@ request and record the incident.
 - Force pushes and branch deletion are blocked.
 - Status checks will be required once CI exists: content validation and build.
 
-Direct pushes to `main` are blocked for contributors. The maintainer is the only role allowed to
-use an administrative bypass, and only for an emergency. Every bypass must be recorded with the
-reason, the affected commit and the follow-up pull request.
+Direct pushes to `main` are blocked for contributors. The maintainer may push directly using the
+administrative bypass reserved for that role. Record the reason, affected commit and follow-up PR
+for emergency bypasses; normal maintainer direct pushes should still have clear commit messages.
 
 Until CI is implemented, the author must paste the result of `npm run check` and `npm run build`
 into the pull request. The roadmap makes CI a Q1 deliverable.

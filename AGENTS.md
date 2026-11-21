@@ -52,7 +52,8 @@ deployment files.
 
 ### Git and collaboration
 
-- Never commit or push directly to `main`.
+- Agents must not commit or push directly to `main` unless the human maintainer explicitly
+  authorizes a direct-main change in the current task. Contributors must never push to `main`.
 - Never force-push `main` or rewrite shared history.
 - Never merge a pull request unless the current task explicitly instructs you to merge and you are
   acting as the maintainer. Default behaviour: create a branch, commit, push the branch, open a
@@ -110,7 +111,7 @@ deployment files.
 
 ## 5. Git and pull request boundary
 
-`main` is protected. The required flow is:
+`main` is protected. Contributors must use a branch and pull request:
 
 ```sh
 git switch main
@@ -123,16 +124,28 @@ git push -u origin HEAD
 # open a PR against main and stop
 ```
 
+The maintainer may commit directly to `main` when explicitly authorized in the current task:
+
+```sh
+git switch main
+git pull --ff-only
+# edit and validate
+git add <changed-files>
+git commit -m "docs: describe the change"
+git push origin main
+```
+
 Rules:
 
-- One logical change per branch and PR.
-- Use the prefixes `content/`, `fix/`, `docs/` or `deploy/`.
+- One logical change per commit or pull request.
+- Use the prefixes `content/`, `fix/`, `docs/` or `deploy/` for branches.
 - Commit messages are short and imperative, for example `content: add November seminar`.
-- Contributors never merge. Only the maintainer merges after approval.
+- Contributors never merge and never push to `main`. Only the maintainer merges or pushes
+  directly.
 - If the task asks you to commit, commit only the files you changed for that task.
 - If the task does not ask you to commit, do not commit or push.
-- If you accidentally commit to `main`, do not push; follow the recovery section in
-  [docs/GITHUB_WORKFLOW.md](docs/GITHUB_WORKFLOW.md).
+- If you accidentally commit to `main` as a contributor, do not push; follow the recovery section
+  in [docs/GITHUB_WORKFLOW.md](docs/GITHUB_WORKFLOW.md).
 - Do not claim a PR is ready until `npm run check` and `npm run build` pass.
 
 ## 6. Content boundaries
@@ -288,7 +301,7 @@ A task is done only when:
 - [ ] The affected page was previewed and checked at desktop and phone widths (for UI/content).
 - [ ] Relevant docs/templates were updated if fields or behaviour changed.
 - [ ] No generated files, secrets or unrelated changes are staged.
-- [ ] The branch/PR flow was followed; `main` was not touched directly.
+- [ ] Contributors used the branch/PR flow; any direct `main` commit was explicitly authorized.
 - [ ] The final report states what changed, what was verified, and what remains uncertain.
 
 ## 14. Quick decision table
@@ -302,7 +315,7 @@ A task is done only when:
 | Create a branch and commit | Only when the task asks |
 | Push a branch and open a PR | Only when the task asks |
 | Merge a PR | Forbidden unless explicitly instructed as maintainer |
-| Push to `main` | Forbidden |
+| Push to `main` | Forbidden for contributors; maintainer only with explicit instruction |
 | Edit generated files | Forbidden |
 | Change deployment, DNS or cloud settings | Forbidden without explicit authorization |
 | Invent content or publish drafts | Forbidden |

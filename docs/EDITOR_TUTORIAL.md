@@ -13,6 +13,8 @@ page type live in [PAGE_TEMPLATES.md](PAGE_TEMPLATES.md). Branch, review and mer
 
 ## Golden rules (read first)
 
+These rules apply to every editor except the repository maintainer.
+
 - **Never commit or push directly to `main`.** It is protected.
 - **Always create a new branch before editing.** Do not edit files while on `main`.
 - **Always open a pull request.** Every change reaches `main` through a pull request.
@@ -21,7 +23,9 @@ page type live in [PAGE_TEMPLATES.md](PAGE_TEMPLATES.md). Branch, review and mer
 - **Do not merge without the required content approval** from the editor or PI.
 - If GitHub blocks you, ask the maintainer. Do not try to bypass branch protection.
 
-The detailed branch, review and merge rules are in [GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md).
+The maintainer may commit directly to `main` when they choose to skip the PR. This exception does
+not apply to anyone else. The detailed branch, review and merge rules are in
+[GITHUB_WORKFLOW.md](GITHUB_WORKFLOW.md).
 
 ## 1. What you can edit
 
