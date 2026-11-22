@@ -69,5 +69,73 @@
         "caption": "Group photo @Jul. 11, 2024. From left to right: Tingyi, Xiaoling, Jingqiang, Linzheng, Zhangjian, Haowen (Sam)."
       }
     ]
+  },
+  {
+    "slug": "david-tang-national-hep-meeting-2026",
+    "title": "David Tang's Talk at the National High Energy Physics Meeting 2026",
+    "category": "Conference",
+    "date": "2026-07-17",
+    "date_precision": "day",
+    "location": "Guangzhou, China",
+    "description": "David Tang presented an XENONnT search for low-mass dark matter at the National High Energy Physics Meeting 2026 in Guangzhou, China.",
+    "cover": "/assets/images/activity_photo/david-tang-national-hep-meeting-2026/david-tang-talk.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/david-tang-national-hep-meeting-2026/david-tang-talk.jpg",
+        "alt": "David Tang speaking beside a screen showing an XENONnT low-mass dark matter search slide at CPS-HEP 2026.",
+        "caption": "David Tang presenting an XENONnT low-mass dark matter search at CPS-HEP 2026 in Guangzhou, China."
+      }
+    ]
+  },
+  {
+    "slug": "huayu-dai-neutrino-poster-2026",
+    "title": "Huayu Dai's Poster at Neutrino 2026",
+    "category": "Conference",
+    "date": "2026-06-23",
+    "date_precision": "day",
+    "location": "Irvine, United States",
+    "description": "Huayu Dai presented the status and prospects of the RELICS experiment at Neutrino 2026, Irvine, United States.",
+    "cover": "/assets/images/activity_photo/huayu-dai-neutrino-poster-2026/huayu-dai-relics-poster.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/huayu-dai-neutrino-poster-2026/huayu-dai-relics-poster.jpg",
+        "alt": "Huayu Dai standing beside his RELICS experiment poster at Neutrino 2026.",
+        "caption": "Huayu Dai with the poster Status and Prospects of the RELICS Experiment at Neutrino 2026, Irvine, United States."
+      }
+    ]
+  },
+  {
+    "slug": "david-tang-graduation-2026",
+    "title": "David Tang's Graduation, May 2026",
+    "category": "Group Life",
+    "date": "2026-05-15",
+    "date_precision": "day",
+    "location": "CUHK-Shenzhen",
+    "description": "Group members celebrated David Tang's graduation at the Neutrino and Dark Matter Lab.",
+    "cover": "/assets/images/activity_photo/david-tang-graduation-2026/david-tang-graduation.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/david-tang-graduation-2026/david-tang-graduation.jpg",
+        "alt": "David Tang wearing a graduation gown and cap with seven group members in the laboratory.",
+        "caption": "Celebrating David Tang's graduation with the group. From left to right: Yuechen, Zhaowei, Hongkun, Jingqiang, David Tang, Zixi, Jiafu, Huayu."
+      }
+    ]
+  },
+  {
+    "slug": "xenonnt-solar-pp-workshop-2025",
+    "title": "XENONnT Solar pp Workshop 2025",
+    "category": "Workshop",
+    "date": "2025-05-12",
+    "date_precision": "day",
+    "location": "CUHK-Shenzhen",
+    "description": "Participants gathered at CUHK-Shenzhen for the XENONnT Solar pp Workshop.",
+    "cover": "/assets/images/activity_photo/xenonnt-solar-pp-workshop-2025/workshop-group-photo.jpg",
+    "photos": [
+      {
+        "image": "/assets/images/activity_photo/xenonnt-solar-pp-workshop-2025/workshop-group-photo.jpg",
+        "alt": "Ten workshop participants posing together on the steps outside a campus building at CUHK-Shenzhen.",
+        "caption": "Participants at the XENONnT Solar pp Workshop, CUHK-Shenzhen. From left to right: Jingqiang, Yoshino, ?, Yue, Zhaowei, Florian, Masatoshi, Maxime, Ting, Giovanni."
+      }
+    ]
   }
 ]
