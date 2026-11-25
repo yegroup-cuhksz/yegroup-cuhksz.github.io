@@ -1,8 +1,8 @@
 # Deployment guide
 
-This document is a reviewable deployment plan for the static Astro output. It does not record a
-completed deployment, and none of the server actions below were executed as part of this
-implementation.
+This document covers two deployment channels for the static Astro output: the GitHub Pages
+mirror, which is live, and the lab-server Nginx path, which remains a reviewable plan. None of
+the server actions below were executed as part of this implementation.
 
 ## Build artifact
 
@@ -20,6 +20,53 @@ root:
 
 `npm run build` generates `dist/media/` from the supplied originals and copies the public
 assets. The `public/media/` working directory itself is ignored by Git.
+
+## GitHub Pages mirror
+
+A public mirror of the site is published from GitHub Actions:
+
+- Repository: <https://github.com/yegroup-cuhksz/yegroup-cuhksz.github.io>
+- Site: <https://yegroup-cuhksz.github.io/>
+- Workflow: `.github/workflows/deploy-pages.yml`
+
+The root URL comes from the organization and repository names: GitHub serves
+`https://<organization>.github.io/` from a repository named `<organization>.github.io`. A
+`*.github.io` address cannot be attached to an unrelated repository as a custom domain, and no
+`CNAME` file is used here.
+
+### Trigger and Pages settings
+
+Each push to `main` runs `npm ci`, `npm run check` and `npm run build` with the Node version in
+`.nvmrc`, then uploads `dist/` as a Pages artifact. A deployment can also be started manually
+from the Actions tab with `workflow_dispatch`.
+
+Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. Do not select
+"Deploy from a branch": that would publish the repository root instead of the built `dist/`
+tree. GitHub enforces HTTPS for the mirror.
+
+### Canonical policy
+
+The mirror is not the canonical origin. `src/data/settings.json` (`domain`) and
+`astro.config.mjs` (`site`) stay `https://yegroup.cuhk.edu.cn`, so canonical links, `og:url`,
+`sitemap.xml` and `robots.txt` all point at the university domain. Do not change them for a
+mirror deployment. Adding `noindex` to the mirror would change the robots policy and needs
+maintainer approval.
+
+### Access, protection and limits
+
+- The repository must be public on the GitHub Free plan. Pages for a private repository
+  requires GitHub Team or above.
+- Pushing changes under `.github/workflows/` requires a token with the `workflow` scope.
+- `main` is protected: a pull request is required, force-push and branch deletion are disabled,
+  and administrators may bypass when explicitly authorized as maintainer.
+- GitHub Pages allows up to 1 GB per published site and about 100 GB of monthly bandwidth. The
+  current build is about 52 MB.
+
+### Rollback
+
+Revert the failing commit on `main` and push; the workflow rebuilds and redeploys automatically.
+Check the Actions log of the failed run and of the last successful run before reverting. The
+mirror does not affect the Nginx or object-storage paths described below.
 
 ## Release layout
 
@@ -75,7 +122,7 @@ ssh -T git@github.com
 
 sudo mkdir -p /srv/yegroup
 sudo chown -R "$USER":"$USER" /srv/yegroup
-git clone git@github.com:OA3lllhhy/ye-group-website.git /srv/yegroup/app
+git clone git@github.com:yegroup-cuhksz/yegroup-cuhksz.github.io.git /srv/yegroup/app
 cd /srv/yegroup/app
 ./scripts/server-deploy.sh
 ```
