@@ -60,8 +60,8 @@ problem it solves and the maintenance cost it adds.
 - Existing constraints: no CI, no automated deploy, no uptime/TLS monitoring, no analytics, no
   backup retention policy, and no dependency-update automation.
 - Production has not been switched from WordPress.com yet.
-- `src/data/news.json` contains one editorial preview that must be resolved (approved, moved to
-  `draft`, or removed) before launch.
+- `src/data/news.json` no longer contains an editorial preview; the former preview was approved
+  and published on 2026-11-25.
 - Content is still thin: the site has few news items, activities and albums. The roadmap should
   improve cadence rather than inflate the archive with unverified material.
 
